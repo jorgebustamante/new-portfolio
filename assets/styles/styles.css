@@ -3,12 +3,19 @@ html {
 		margin: 0;
         min-height:100%;
         overflow-y: visible;
+        overflow-x: hidden;
         position: relative;
         font-family: 'Raleway', sans-serif !important;
 
 
 
 }
+@media only screen and (max-width: 320px) {
+    html {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
 #bg-image{
     background-image: url("../images/desert-svg.svg");
     min-height: 100%;
@@ -19,8 +26,13 @@ html {
     position: absolute;
 }
 /* navbar and intro section */
+@media only screen and (max-width: 375px) {
+    .intro {
+        font-size: 1.5rem !important;
+        }
+  }
 .hyperlinks:link{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     background-color: aliceblue;
 }
 
@@ -53,9 +65,19 @@ html {
 .bio{
     font-size: 1.4rem
 }
+@media only screen and (max-width: 375px) {
+    .bio {
+        font-size: 1.2rem !important;
+        }
+  }
 .colored{
-    font-size: 5em;
+    font-size: 5rem;
 }
+@media only screen and (max-width: 375px) {
+    .colored {
+        font-size: 4rem !important;
+        }
+  }
 .tech{
     display: inline-grid;
     padding-left: 15px;
@@ -105,7 +127,7 @@ html {
     .project-icon{
         padding-left: 10px;
         padding-right: 10px;
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
     .first{
     margin-left: 10%;
@@ -123,7 +145,7 @@ html {
 
 /* contact and page end */
 .contact-icon{
-    font-size: 10pt !important;
+    font-size: 2rem !important;
     color: #6a7bfc;
     padding-left: 20px;
     padding-right: 20px;
