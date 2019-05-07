@@ -1,0 +1,164 @@
+body,
+html {
+		margin: 0;
+        min-height:100%;
+        overflow-y: visible;
+        position: relative;
+        font-family: 'Raleway', sans-serif !important;
+
+
+
+}
+#bg-image{
+    background-image: url("../images/desert-svg.svg");
+    min-height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+}
+/* navbar and intro section */
+.hyperlinks:link{
+    font-size: 1.5em;
+    background-color: aliceblue;
+}
+
+#invis{
+    background: #ffa67a;
+}
+#top{
+    margin-top: 5%;
+}
+.intro{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+.about-me{
+    bottom: 10px;
+
+}
+#name{
+    font-size: 20pt;
+}
+#linkedincard{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+/* --------------------------- */
+
+/* section for cards  */
+.bio{
+    font-size: 1.4rem
+}
+.colored{
+    font-size: 5em;
+}
+.tech{
+    display: inline-grid;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.tech-title{
+    text-align: center;
+}
+/* --------------------- */
+
+/* section for projects and scrollbox */
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+}
+
+@media only screen and (max-width: 600px) {
+    #scrollbox {
+      min-width: 80%;
+    }
+  }
+  @media only screen and (max-width: 2000px) {
+    #scrollbox {
+      max-width: 30%;
+    }
+  }
+  #scrollbox{
+    flex: 0 0 auto;
+    margin-right: 10%;
+    padding: 0px;
+    overflow-x: hidden;
+    box-shadow: 3px 3px 3px  #00000085;
+}
+.scrolling-wrapper::-webkit-scrollbar { 
+    display: none; 
+    /* this only works in chrome, need to accomadate edge and mozilla */
+    right: 50%;
+}
+    .card-img{
+        max-width: 100%;
+    }
+    .project-links{
+        font-size: 12pt;
+        font-weight: bold;
+    }
+    .project-icon{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 2rem;
+    }
+    .first{
+    margin-left: 10%;
+    }
+    .last{
+    margin-right: 10%;
+    }
+    .card-text{
+        padding: 1.25rem;
+    }
+    .project-title{
+        text-align: center;
+    }
+/* -------------------------------- */
+
+/* contact and page end */
+.contact-icon{
+    font-size: 10pt !important;
+    color: #6a7bfc;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footer{
+    background: black !important;
+    position: relative;
+    height: 200px;
+}
+/* ------------------- */
+
+/* reused style classes */
+.title{
+    color: black !important;
+    word-break: none;
+}
+.icons{
+font-size: .5rem;
+}
+.vertical-text{
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 40px;
+}
+.links{
+    font-size: 15pt;
+}
+.white-text{
+    color: whitesmoke !important;
+}
+.text-shadow{
+    text-shadow: 1px 1px 1px  #3a2016;
+}
+/* -------------- */
