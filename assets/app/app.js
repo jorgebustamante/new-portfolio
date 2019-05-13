@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if ($navbarBurgers.length > 0) {
 
     // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
+    $navbarBurgers.forEach(el => {
       el.addEventListener('click', () => {
 
         // Get the target from the "data-target" attribute
@@ -22,4 +22,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-});
+  const btnsN = document.querySelectorAll('.buttons-next');
+  const btnsP = document.querySelectorAll('.buttons-previous');
+  const sections = document.querySelectorAll('.card-img');
+  btnsN[0].addEventListener('click', () => {
+    sections[1].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  });
+  btnsN[1].addEventListener('click', () => {
+    sections[2].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  });
+  btnsN[2].addEventListener('click', () => {
+    sections[3].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  });
+  btnsN[3].addEventListener('click', () => {
+    sections[4].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  });
+
+  btnsP[0].addEventListener('click', () => {
+    sections[0].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  });
+  btnsP[1].addEventListener('click', () => {
+    sections[1].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  });
+  btnsP[2].addEventListener('click', () => {
+    sections[2].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  });
+  btnsP[3].addEventListener('click', () => {
+    sections[3].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  });
+ 
+
+})
