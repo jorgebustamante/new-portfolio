@@ -30,16 +30,14 @@ body::-webkit-scrollbar-thumb {
 }
 #bg-image {
   background: url('../images/vector5-01.svg') center center;
+  opacity: 0.85;
   height: 100%;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* height: 100%; */
   overflow: hidden;
-  /* background-position: center center; */
-  /* background-attachment: fixed; */
   scroll-behavior: none;
   background-size: cover;
   display: flex;
