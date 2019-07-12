@@ -136,7 +136,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 600px) {
   .scrollbox {
-    min-width: 80%;
+    min-width: 90%;
   }
 }
 @media only screen and (max-width: 2000px) {
@@ -144,11 +144,16 @@ body::-webkit-scrollbar-thumb {
     max-width: 30%;
   }
 }
+@media only screen and (max-width: 1000px) {
+  .scrollbox {
+    max-width: 50%;
+  }
+}
 .scrollbox {
   flex: 0 0 auto;
   margin-right: 5%;
   margin-left: 5%;
-  /* padding: 10% !important; */
+  padding: .5rem 0.25rem 0rem 0.25rem !important;
   overflow-x: hidden;
   box-shadow: 3px 3px 3px #00000085;
 }
@@ -170,20 +175,23 @@ body::-webkit-scrollbar-thumb {
   font-size: 2rem !important;
 }
 .first {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 .last {
-  margin-right: 10%;
+  margin-right: 5%;
 }
 .card-text {
-  padding: 1.25rem;
+  padding: .5rem;
 }
 .project-title {
   text-align: center;
 }
 .card {
   box-shadow: none !important;
+  /* display: inline-grid !important; */
+  /* max-width: 80% !important; */
 }
+
 /* -------------------------------- */
 
 /* contact and page end */
@@ -226,7 +234,7 @@ body::-webkit-scrollbar-thumb {
 .text-shadow {
   text-shadow: 1px 1px 1px #3a2016;
 }
-.hide{
+.hide {
   visibility: hidden;
 }
 /* -------------- */
