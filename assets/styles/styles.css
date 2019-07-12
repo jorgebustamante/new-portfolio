@@ -226,4 +226,7 @@ body::-webkit-scrollbar-thumb {
 .text-shadow {
   text-shadow: 1px 1px 1px #3a2016;
 }
+.hide{
+  visibility: hidden;
+}
 /* -------------- */
