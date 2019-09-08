@@ -1,0 +1,245 @@
+// Importing variables
+@import './variables.scss';
+
+// Importing Bulma from node_modules
+@import '~bulma/bulma.sass';
+
+body,
+.footer {
+  background: hsla(5,94%,69%,0.3);
+  
+
+}
+#bg-image {
+  background: url('../images/BlueGrid_2000x.png') center center;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  top:0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  scroll-behavior: none;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: -1;
+}
+.card,
+.box {
+  background: hsla(193,81%,73%,1);
+  // border-radius: 25px;
+}
+
+.scrollbox {
+  height: 500px;
+
+}
+/* the slides */
+.slick-slide {
+  // transition: 0.2s;
+  filter: blur(3px) !important;
+}
+.Item{
+  padding-right: 30px;
+
+}
+
+.slick-slider{
+margin-bottom: 10%;
+}
+/* the parent */
+.slick-list {
+  height: 550px;
+
+}
+
+
+  
+
+.slick-current {
+  filter: none !important;
+  // transition: 0.2s;
+}
+
+
+.gradientBg {
+  display: flex;
+  background: linear-gradient(to right, $primary-color, $secondary-color);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slides {
+  position: relative;
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+  }
+  .slick-prev {
+    left: 5%;
+  }
+  .slick-next {
+    right: 5%;
+  }
+}
+
+.footer {
+  display: flex;
+  padding: 1.5rem 1.5rem;
+  line-height: 1.5rem;
+  a {
+    border-bottom: 1px solid;
+    color: black;
+  }
+  a:hover {
+    color: $secondary-color;
+  }
+}
+.hyperlinks:link {
+	font-size: 1.5rem;
+	background-color: aliceblue;
+  }
+  
+  #invis {
+	background:  hsla(5,94%,69%,.7);
+  }
+  .biz-card {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  }
+  .intro {
+	font-size: 2rem;
+	color: black;
+	// font-weight: bold;
+  }
+  .about-me {
+	bottom: 10px;
+  }
+  #name {
+	font-size: 20pt;
+  }
+  #linkedincard {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+  }
+  /* --------------------------- */
+  
+  /* section for cards  */
+  .bio {
+	font-size: 1.4rem;
+  }
+  @media only screen and (max-width: 430px) {
+	.bio {
+	  font-size: 1rem !important;
+	}
+  }
+  .colored {
+	font-size: 5rem;
+  }
+  @media only screen and (max-width: 375px) {
+	.colored {
+	  font-size: 4rem !important;
+	}
+  }
+  .tech-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0px;
+  }
+  @media only screen and (max-width: 600px){
+    .tech-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0px;
+    }
+  }
+  .tech {
+	// display: inline-grid;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+  }
+  .tech-title {
+	text-align: center;
+  }
+  .box {
+	box-shadow: none !important;
+  }
+  /* --------------------- */
+  
+  .project-links {
+	font-size: 12pt;
+	font-weight: bold;
+  }
+  .project-icon {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 2rem !important;
+  }
+  .card-text {
+	padding: .5rem;
+  }
+  .project-title {
+	text-align: center;
+  }
+  .card {
+	box-shadow: none !important;
+
+  }
+  
+  /* -------------------------------- */
+  
+  /* contact and page end */
+  .contact-icon {
+	font-size: 2rem !important;
+	color: #6a7bfc;
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+  .footer {
+	background: black !important;
+	position: relative;
+	height: 200px;
+  }
+  /* ------------------- */
+  
+  /* reused style classes */
+  .title {
+	color: black !important;
+  word-break: none;
+  margin-left: 2%;
+  }
+  .icons {
+	font-size: 0.5rem;
+  }
+  
+  .vertical-text {
+	writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: vertical-rl;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	color: black;
+	font-size: 40pt;
+  }
+  .links {
+	font-size: 15pt;
+  }
+  .white-text {
+	color: whitesmoke !important;
+  }
+  
+  .hide {
+	visibility: hidden;
+  }
+  /* -------------- */
