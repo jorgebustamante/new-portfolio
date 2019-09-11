@@ -1,3 +1,4 @@
+const path = require('path')
 module.exports = {
 
 	siteMetadata: {
@@ -12,16 +13,24 @@ module.exports = {
 		siteUrl: `https://www.paulierodriguez.dev`
 	},
 	plugins: [
+		'gatsby-transformer-sharp',
+		'gatsby-plugin-sharp',
 		'gatsby-plugin-react-helmet',
+		// {
+		// 	resolve: `gatsby-source-filesystem`,
+		// 	options: {
+		// 		name: `images`,
+		// 		path: `${__dirname}/src/images`
+		// 	}
+		// },
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
-				name: `images`,
-				path: `${__dirname}/src/images`
-			}
-		},
-		'gatsby-transformer-sharp',
-		'gatsby-plugin-sharp',
+			  name: `images`,
+			  path: path.join(__dirname, 'src/images'),
+			},
+		  },
+		
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {

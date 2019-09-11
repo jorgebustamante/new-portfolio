@@ -1,7 +1,11 @@
 import React from 'react';
 import './style.scss';
 import Media from './media'
+// import Img from "gatsby-image"
+// import { graphql } from "gatsby"
+
 const Intro = () => (
+  
  
       <div id="top" className="columns is-gapless">
         <div className="column">
@@ -11,11 +15,12 @@ const Intro = () => (
                 PAULIE RODRIGUEZ
               </h4>
               <div className="about-me media-content media-right">
-                <figure className="image is-96x96">
+                <figure className="image is-128x128">
+                {/* <Img id='linkedinpic' className='is-rounded' fixed={data.file.childImageSharp.fixed} /> */}
                   <img
                     id="linkedinpic"
                     className="is-rounded"
-                    src={Media.linkedin}
+                    src={Media.Profile}
                     alt="linkedin profile pic"
                   />
                 </figure>
@@ -32,5 +37,18 @@ const Intro = () => (
     
   
 );
+// export const query = graphql`
+//   query {
+//     file(relativePath: { eq: "profile.png" }) {
+//       childImageSharp {
+//         # Specify the image processing specifications right in the query.
+//         # Makes it trivial to update as your page's design changes.
+//         fixed(width: 128, height: 128) {
+//           ...GatsbyImageSharpFixed
+//         }
+//       }
+//     }
+//   }
+// `
 
 export default Intro;

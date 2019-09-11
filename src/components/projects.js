@@ -1,55 +1,100 @@
 import React from 'react';
 import './style.scss';
 import Slider from 'react-slick';
-import { Parallax } from 'react-scroll-parallax';
-import Media from './media';
 import '../../node_modules/slick-carousel/slick/slick.scss';
 import '../../node_modules/slick-carousel/slick/slick-theme.scss';
+import { Parallax } from 'react-scroll-parallax';
+import Media from './media';
+// import { graphql } from 'gatsby';
+// import Img from 'gatsby-image';
 
 const settings = {
-  dots: true,
-  infinite: true,
-  arrows: true,
-  speed: 500,
-  centerMode: true,
-  centerPadding: '10px',
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  adaptiveHeight: true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
+       slidesToShow: 1,
         slidesToScroll: 1,
+        dots: true,
         infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-        // arrows: true,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-        // arrows: true,
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+        arrows: true,
+        speed: 500,
+        centerMode: true,
+        centerPadding: '10px',
+        adaptiveHeight: true
+  // responsive: [
+    // {
+    //   breakpoint: 2000,
+    //   settings: {
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     dots: true,
+    //     infinite: true,
+    //     arrows: true,
+    //     speed: 500,
+    //     centerMode: true,
+    //     centerPadding: '10px',
+    //     adaptiveHeight: true
+    //     // fade: true
+    //   }
+    // },
+    // {
+    //   breakpoint: 1200,
+    //   settings: {
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     dots: true,
+    //     infinite: true,
+    //     arrows: true,
+    //     speed: 500,
+    //     centerMode: true,
+    //     centerPadding: '10px',
+    //     adaptiveHeight: true
+    //     // fade: true
+    //   }
+    // },
+    // {
+    //   breakpoint: 900,
+    //   settings: {
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     dots: true,
+    //     infinite: true,
+    //     arrows: true,
+    //     speed: 500,
+    //     centerMode: true,
+    //     centerPadding: '10px',
+    //     adaptiveHeight: true
+    //     // fade: true
+    //   }
+    // },
+    // {
+    //   breakpoint: 600,
+    //   settings: {
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     dots: true,
+    //     infinite: true,
+    //     arrows: true,
+    //     speed: 500,
+    //     centerMode: true,
+    //     centerPadding: '10px',
+    //     adaptiveHeight: true
+    //     // fade: true
+    //   }
+    // },
+    // {
+    //   breakpoint: 480,
+    //   settings: {
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     dots: true,
+    //     infinite: true,
+    //     arrows: true,
+    //     speed: 500,
+    //     centerMode: true,
+    //     centerPadding: '10px',
+    //     adaptiveHeight: true
+    //     // fade: true
+    //   }
+    // }
+  // ]
 };
 const Projects = () => (
   <Parallax className="custom-class" x={[10, -10]}>
@@ -61,7 +106,7 @@ const Projects = () => (
         <div className="scrolling-wrapper">
           <Slider {...settings}>
             <div className="Item">
-              <div id="proj1.5" className="box has-text-centered scrollbox">
+              <div id="proj1.5" className="box has-text-centered scrollbox p1">
                 <article className="media">
                   <div className="media-content">
                     <div className="content">
@@ -99,7 +144,7 @@ const Projects = () => (
               </div>
             </div>
             <div className="Item">
-              <div id="proj1" className="box scrollbox">
+              <div id="proj1" className="box scrollbox p2">
                 <article className="media">
                   <div className="media-content">
                     <div className="content">
@@ -136,7 +181,7 @@ const Projects = () => (
               </div>
             </div>
             <div className="Item">
-              <div id="proj2" className="scrollbox box">
+              <div id="proj2" className="scrollbox box p3">
                 <article className="media">
                   <div className="media-content">
                     <div className="content">
@@ -173,7 +218,7 @@ const Projects = () => (
               </div>
             </div>
             <div className="Item">
-              <div id="proj3" className="scrollbox box">
+              <div id="proj3" className="scrollbox box p4">
                 <article className="media">
                   <div className="media-content">
                     <div className="content">
@@ -210,7 +255,7 @@ const Projects = () => (
               </div>
             </div>
             <div className="Item">
-              <div id="proj4" className="box scrollbox">
+              <div id="proj4" className="box scrollbox p5">
                 <article className="media">
                   <div className="media-content">
                     <div className="content">
@@ -244,7 +289,7 @@ const Projects = () => (
               </div>
             </div>
             <div className="Item">
-              <div id="proj5" className="box last scrollbox">
+              <div id="proj5" className="box last scrollbox p6">
                 <article className="media">
                   <div className="media-content">
                     <div className="content">

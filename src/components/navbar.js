@@ -19,6 +19,7 @@ const Navbar = () => (
     <div className="container">
       <div className="navbar-brand">
         <img id="logo" src={Media.Brand} alt="Logo" style={Logo} />
+        
         <span
           className="navbar-burger burger"
           data-target="navbarMenu"

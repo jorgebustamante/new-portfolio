@@ -1,4 +1,7 @@
 import React from 'react';
+import Slider from 'react-slick';
+import '../../node_modules/slick-carousel/slick/slick.scss';
+import '../../node_modules/slick-carousel/slick/slick-theme.scss';
 import './style.scss';
 import Helmet from './helmet';
 import Navbar from './navbar';

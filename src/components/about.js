@@ -1,7 +1,8 @@
 import React from 'react';
 // import { StaticQuery, graphql } from 'gatsby';
 import './style.scss';
-import { Parallax } from 'react-scroll-parallax';
+// import { Parallax } from 'react-scroll-parallax';
+import { FaCameraRetro, FaLaptopCode, FaPaintBrush } from 'react-icons/fa';
 
 const About = () => (
   <div className="columns features">
@@ -12,13 +13,15 @@ const About = () => (
         </div>
         <div className="card-content">
           <div className="content">
-            <h4>Front end. </h4>
+            <h4>
+              Front end <FaPaintBrush />{' '}
+            </h4>
             <p>I have built front ends featuring:</p>
             <ul>
               <li>Bulma Bootstrap Materialize CSS frameworks</li>
-              <li>Image submissions</li>
-              <li>React</li>
-              <li>Gatsby js Markdown templating</li>
+              <li>Media upload</li>
+              <li>React.js</li>
+              <li>Gatsby.js Markdown templating</li>
               <li>Responsive DOM manipulation in vanilla javascript</li>
             </ul>
           </div>
@@ -32,7 +35,9 @@ const About = () => (
         </div>
         <div className="card-content">
           <div className="content">
-            <h4>Back end.</h4>
+            <h4>
+              Back end <FaLaptopCode />
+            </h4>
 
             <p>
               I have experience building speedy responsive back end applications
@@ -56,7 +61,9 @@ const About = () => (
         </div>
         <div className="card-content">
           <div className="content">
-            <h4>Design.</h4>
+            <h4>
+              Design <FaCameraRetro />
+            </h4>
 
             <p>I have years of experience in visual arts ranging from:</p>
             <ul>

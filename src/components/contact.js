@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.scss';
-import { StaticQuery, graphql } from 'gatsby';
+// import { StaticQuery, graphql } from 'gatsby';
+import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact = () => (
@@ -18,6 +19,11 @@ const Contact = () => (
           <i className="fab fa-github contact-icon">
             {' '}
             <FaGithub />
+          </i>
+        </a>
+        <a href="https://www.instagram.com/soft_vato/">
+          <i className="contact-icon">
+            <FaInstagram />{' '}
           </i>
         </a>
       </div>
