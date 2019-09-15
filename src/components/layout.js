@@ -63,37 +63,4 @@ export default class Layout extends React.Component {
   }
 }
 
-// let Carousel;
 
-//   if (typeof window.self !== 'undefined') {
-//     window.self.innerWidth > 900 ? (Carousel = ProjectsWide) : (Carousel = Projects);
-//     return Carousel;
-//   }
-// const Layout = ({ children }) => {
-//   // const isClient = typeof window !== 'undefined'; // Prevents breaks when SSR
-
-//   let Carousel;
-
-//   // if (typeof window.self !== 'undefined') {
-//   window.self.innerWidth > 900
-//     ? (Carousel = ProjectsWide)
-//     : (Carousel = Projects);
-//   // return Carousel;
-//   // }
-//   return (
-//     <div>
-//       <Helmet />
-//       <ParallaxProvider>
-//         <Background />
-//         <Navbar />
-//         <Intro />
-//         <About />
-//         <Technologies />
-//         <Carousel />
-//         <Contact />
-//       </ParallaxProvider>
-//     </div>
-//   );
-// };
-
-// export default Layout;

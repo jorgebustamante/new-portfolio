@@ -6,7 +6,7 @@ import { FaCameraRetro, FaLaptopCode, FaPaintBrush } from 'react-icons/fa';
 
 
 const About = () => (
-  <div className="columns features">
+  <div className="columns features" id="About">
     <div className="column is-4">
       <div className="card is-shady">
         <div className="card-image has-text-centered">
