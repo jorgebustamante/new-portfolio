@@ -45,10 +45,10 @@ body {
 
 }
 /* the slides */
-.slick-slide {
-  // transition: 0.2s;
-  // filter: blur(3px) !important;
-}
+// .slick-slide {
+//   // transition: 0.2s;
+//   // filter: blur(3px) !important;
+// }
 .Item{
   padding-right: 30px;
 
@@ -117,8 +117,11 @@ margin-bottom: 10%;
   #invis {
 	background:  hsla(5,94%,69%,.7)
   }
-  .biz-card {
-  // margin-bottom: 10%;
+  // .biz-card {
+  // // margin-bottom: 10%;
+  // }
+  .navbar-menu.is-active{
+    background: #aba0c385;
   }
   @media only screen and (max-width: 900px){
     .biz-card{

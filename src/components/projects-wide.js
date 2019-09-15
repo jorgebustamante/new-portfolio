@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import '../../node_modules/slick-carousel/slick/slick.scss';
 import '../../node_modules/slick-carousel/slick/slick-theme.scss';
 import { Parallax } from 'react-scroll-parallax';
+// import Media from './media';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 export const projectImage = graphql`
@@ -15,8 +16,9 @@ export const projectImage = graphql`
       }
     }
   `;
-const Projects = () => {
-  
+
+const ProjectsWide = () => {
+   
   const data = useStaticQuery(graphql`
     query {
       githubfinder: file(absolutePath: { regex: "/githubfinder.PNG/" }) {
@@ -49,52 +51,39 @@ const Projects = () => {
     centerMode: true,
     centerPadding: '10px',
     adaptiveHeight: true,
-
+    
     responsive: [
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          infinite: true,
-          arrows: true,
-          speed: 500,
-          centerMode: true,
-          centerPadding: '10px',
-          adaptiveHeight: true
-          // fade: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          infinite: true,
-          arrows: true,
-          speed: 500,
-          centerMode: true,
-          centerPadding: '10px',
-          adaptiveHeight: true
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          infinite: true,
-          arrows: true,
-          speed: 500,
-          centerMode: true,
-          centerPadding: '10px',
-          adaptiveHeight: true
-          // fade: true
-        }
+    {
+      breakpoint: 2000,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        arrows: true,
+        speed: 500,
+        centerMode: true,
+        centerPadding: '10px',
+        adaptiveHeight: true,
+        // fade: true
       }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        arrows: true,
+        speed: 500,
+        centerMode: true,
+        centerPadding: '10px',
+        adaptiveHeight: true,
+        // fade: true
+      }
+    },
+   
     ]
   };
   return (
@@ -366,4 +355,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsWide;

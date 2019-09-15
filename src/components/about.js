@@ -4,6 +4,7 @@ import './style.scss';
 // import { Parallax } from 'react-scroll-parallax';
 import { FaCameraRetro, FaLaptopCode, FaPaintBrush } from 'react-icons/fa';
 
+
 const About = () => (
   <div className="columns features">
     <div className="column is-4">
