@@ -8,7 +8,7 @@ const Card = props => {
           <div className="media-content">
             <div className="content">
               <div className="card-background">
-                <Img
+                <Img className='cardImg'
                   fluid={props.fluid}
                   imgStyle={{
                     maxWidth: '100%'
@@ -21,9 +21,9 @@ const Card = props => {
                   <p className="project-body">{props.description}</p>
 
                   <div className="project-links">
-                    <a href={props.github}>Github</a>
+                    <a href={props.github} target="_blank" rel="noopener noreferrer">Github</a>
                     <br />
-                    {props.deploy ? <a href={props.deploy}>Deploy</a> : null}
+                    {props.deploy ? <a href={props.deploy} target="_blank" rel="noopener noreferrer">Deploy</a> : null}
                   </div>
                 </div>
               </div>

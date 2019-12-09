@@ -23,7 +23,7 @@ const Intro = () => {
         <div className="biz-card">
           <div id="linkedincard" className="box media">
             <h4 className="vertical-text media-left text-shadow">
-              PAULIE RODRIGUEZ
+              <span>PAULIE RODRIGUEZ</span>
             </h4>
             <div className="about-me media-content media-right">
               <figure className="image is-128x128">

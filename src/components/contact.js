@@ -8,19 +8,19 @@ const Contact = () => (
     <div className="content has-text-centered">
       <h4 className="header title is-4 white-text">Contact me</h4>
       <div>
-        <a href="https://www.linkedin.com/in/paulie-rodriguez/">
+        <a href="https://www.linkedin.com/in/paulie-rodriguez/" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin contact-icon">
             {' '}
             <FaLinkedin />
           </i>
         </a>
-        <a href="https://github.com/jorgebustamante">
+        <a href="https://github.com/jorgebustamante" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-github contact-icon">
             {' '}
             <FaGithub />
           </i>
         </a>
-        <a href="https://www.instagram.com/soft_vato/">
+        <a href="https://www.instagram.com/soft_vato/" target="_blank" rel="noopener noreferrer">
           <i className="contact-icon">
             <FaInstagram />{' '}
           </i>

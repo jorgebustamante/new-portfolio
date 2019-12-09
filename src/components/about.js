@@ -19,10 +19,10 @@ const About = () => (
             <p>I have built front ends featuring:</p>
             <ul>
               <li>Bulma Bootstrap Materialize CSS frameworks</li>
-              <li>Media upload</li>
+              <li>UI design patterns</li>
               <li>React.js</li>
-              <li>Gatsby.js Markdown templating</li>
-              <li>Responsive DOM manipulation in vanilla javascript</li>
+              <li>Gatsby.js programmatic page creation</li>
+              <li>Responsive DOM manipulation in vanilla Javascript</li>
             </ul>
           </div>
         </div>
@@ -72,7 +72,6 @@ const About = () => (
               <li>Studio Lighting</li>
               <li>Graphic Design</li>
               <li>Vector Art</li>
-              <li>Digital Illustration</li>
             </ul>
           </div>
         </div>

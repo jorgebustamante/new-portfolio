@@ -5,7 +5,10 @@
 @import '~bulma/bulma.sass';
 
 body {
-  background: rgba(55, 105, 243, 0.507);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  background: #f2eade;
   overflow-x: hidden;
   width: 100%;
   height: 100%;
@@ -34,17 +37,17 @@ body {
 }
 .card,
 .box {
-  background: #f54123;
-  color: #e5e7de;
+  background: #ff6344;
+  color: #29374c;
 }
 .content h4 strong {
-  color: #e5e7de !important;
+  color: #29374c !important;
 }
 .card h4 {
-  color: #e5e7de;
+  color: #29374c;
 }
 .card-content {
-  color: #e5e7de;
+  color: #29374c;
 }
 
 .scrollbox {
@@ -126,7 +129,7 @@ body {
 }
 .intro {
   font-size: 2rem;
-  color: #0f0a01;
+  color: #29374c;
 }
 @media only screen and (max-width: 600px) {
   .intro {
@@ -190,7 +193,7 @@ body {
 .project-links a {
   font-size: 12pt;
   font-weight: bold;
-  color: #0098d8;
+  color: #5f6dcb;
 }
 .project-icon {
   padding-left: 10px;
@@ -199,7 +202,7 @@ body {
 }
 .card-text {
   padding: 0.5rem;
-  color: #e5e7de;
+  color: #29374c;
 }
 .card-img {
   width: 500px;
@@ -229,7 +232,7 @@ body {
 
 /* reused style classes */
 .title {
-  color: #e5e7de !important;
+  color: #29374c !important;
   word-break: none;
   margin-left: 2%;
 }
@@ -243,7 +246,7 @@ body {
   -ms-writing-mode: vertical-rl;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  color: black;
+  color: #29374c;
   font-size: 40pt;
   // word-break: normal !important;
   white-space: nowrap;
@@ -255,6 +258,7 @@ body {
 }
 .links {
   font-size: 15pt;
+  color: #29374c;
 }
 .white-text {
   color: whitesmoke !important;
@@ -264,3 +268,10 @@ body {
   visibility: hidden;
 }
 /* -------------- */
+.low-light-orange {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, #d85800 40%);
+  padding-right: 15px;
+}
+.cardImg{
+  max-height: 200px;
+}
