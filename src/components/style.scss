@@ -5,21 +5,19 @@
 @import '~bulma/bulma.sass';
 
 body {
-  background: hsla(5,94%,69%,0.3);
+  background: rgba(55, 105, 243, 0.507);
   overflow-x: hidden;
   width: 100%;
   height: 100%;
   overflow-y: scroll; /* has to be scroll, not auto */
   // -webkit-overflow-scrolling: touch;
-  
-
 }
 #bg-image {
   background: url('../images/BlueGrid_2000x.png') center center;
   opacity: 0.7;
   height: 100%;
   width: 100%;
-  top:0;
+  top: 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -36,41 +34,38 @@ body {
 }
 .card,
 .box {
-  background: hsla(193,81%,73%,1);
-  // border-radius: 25px;
+  background: #f54123;
+  color: #e5e7de;
+}
+.content h4 strong {
+  color: #e5e7de !important;
+}
+.card h4 {
+  color: #e5e7de;
+}
+.card-content {
+  color: #e5e7de;
 }
 
 .scrollbox {
-  height: 500px;
-
+  height: 450px;
 }
-/* the slides */
-// .slick-slide {
-//   // transition: 0.2s;
-//   // filter: blur(3px) !important;
-// }
-.Item{
+
+.Item {
   padding-right: 30px;
-
 }
 
-.slick-slider{
-margin-bottom: 10%;
+.slick-slider {
+  margin-bottom: 10%;
 }
 /* the parent */
 .slick-list {
   height: 550px;
-
 }
-
-
-  
 
 .slick-current {
   filter: none !important;
-  // transition: 0.2s;
 }
-
 
 .gradientBg {
   display: flex;
@@ -110,164 +105,162 @@ margin-bottom: 10%;
   }
 }
 .hyperlinks:link {
-	font-size: 1.5rem;
-	background-color: aliceblue;
-  }
-  
-  #invis {
-	background:  hsla(5,94%,69%,.7)
-  }
-  // .biz-card {
-  // // margin-bottom: 10%;
-  // }
-  .navbar-menu.is-active{
-    background: #aba0c385;
-  }
-  @media only screen and (max-width: 900px){
-    .biz-card{
-      margin-top: 10%;
+  font-size: 1.5rem;
+  background-color: aliceblue;
+}
+.card a {
+  color: #0098d8 !important;
+}
 
-    }
+#invis {
+  background: hsla(5, 94%, 69%, 0.7);
+}
+
+.navbar-menu.is-active {
+  background: #aba0c385;
+}
+@media only screen and (max-width: 900px) {
+  .biz-card {
+    margin-top: 10%;
   }
+}
+.intro {
+  font-size: 2rem;
+  color: #0f0a01;
+}
+@media only screen and (max-width: 600px) {
   .intro {
-	font-size: 2rem;
-	color: black;
-	// font-weight: bold;
+    font-size: 1.5rem;
   }
-  @media only screen and (max-width: 600px){
-    .intro{
-      font-size: 1.5rem;
-    }
-  }
-  .about-me {
-	bottom: 10px;
-  }
-  #name {
-	font-size: 20pt;
-  }
-  #linkedincard {
-	background-color: transparent;
-	border: none;
-	box-shadow: none;
-  }
-  /* --------------------------- */
-  
-  /* section for cards  */
+}
+.about-me {
+  bottom: 10px;
+}
+#name {
+  font-size: 20pt;
+}
+#linkedincard {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+/* --------------------------- */
+
+/* section for cards  */
+.bio {
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 430px) {
   .bio {
-	font-size: 1.4rem;
+    font-size: 1rem !important;
   }
-  @media only screen and (max-width: 430px) {
-	.bio {
-	  font-size: 1rem !important;
-	}
-  }
+}
+.colored {
+  font-size: 5rem;
+}
+@media only screen and (max-width: 375px) {
   .colored {
-	font-size: 5rem;
+    font-size: 4rem !important;
   }
-  @media only screen and (max-width: 375px) {
-	.colored {
-	  font-size: 4rem !important;
-	}
-  }
-  .tech-grid{
+}
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0px;
+}
+@media only screen and (max-width: 600px) {
+  .tech-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 0px;
   }
-  @media only screen and (max-width: 600px){
-    .tech-grid{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 0px;
-    }
-  }
-  .tech {
-	// display: inline-grid;
-	padding-left: 1.5%;
-	padding-right: 1.5%;
-  }
-  .tech-title {
-	text-align: center;
-  }
-  .box {
-	box-shadow: none !important;
-  }
-  /* --------------------- */
-  
-  .project-links {
-	font-size: 12pt;
-	font-weight: bold;
-  }
-  .project-icon {
-	padding-left: 10px;
-	padding-right: 10px;
-	font-size: 2rem !important;
-  }
-  .card-text {
-	padding: .5rem;
-  }
-  .card-img{
-    width: 500px;
+}
+.tech {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+.tech-title {
+  text-align: center;
+}
+.box {
+  box-shadow: none !important;
+}
+/* --------------------- */
 
-  }
-  .project-title {
-	text-align: center;
-  }
-  .card {
-	box-shadow: none !important;
+.project-links a {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #0098d8;
+}
+.project-icon {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 2rem !important;
+}
+.card-text {
+  padding: 0.5rem;
+  color: #e5e7de;
+}
+.card-img {
+  width: 500px;
+}
+.project-title {
+  text-align: center;
+}
+.card {
+  box-shadow: none !important;
+}
 
-  }
-  
-  /* -------------------------------- */
-  
-  /* contact and page end */
-  .contact-icon {
-	font-size: 2rem !important;
-	color: #6a7bfc;
-	padding-left: 20px;
-	padding-right: 20px;
-  }
-  .footer {
-	background: black !important;
-	position: relative;
-	height: 200px;
-  }
-  /* ------------------- */
-  
-  /* reused style classes */
-  .title {
-	// color: black !important;
+/* -------------------------------- */
+
+/* contact and page end */
+.contact-icon {
+  font-size: 2rem !important;
+  color: #6a7bfc;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footer {
+  background: black !important;
+  position: relative;
+  height: 200px;
+}
+/* ------------------- */
+
+/* reused style classes */
+.title {
+  color: #e5e7de !important;
   word-break: none;
   margin-left: 2%;
-  }
-  .icons {
-	font-size: 0.5rem;
-  }
-  
-  .vertical-text {
-	writing-mode: vertical-rl;
-	-webkit-writing-mode: vertical-rl;
-	-ms-writing-mode: vertical-rl;
-	font-family: 'Poppins', sans-serif;
-	font-weight: bold;
-	color: black;
+}
+.icons {
+  font-size: 0.5rem;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: black;
   font-size: 40pt;
   // word-break: normal !important;
   white-space: nowrap;
+}
+@media only screen and (max-width: 600px) {
+  .vertical-text {
+    font-size: 30pt;
   }
-  @media only screen and (max-width: 600px){
-    .vertical-text{
-      font-size: 30pt;
-    }
-  }
-  .links {
-	font-size: 15pt;
-  }
-  .white-text {
-	color: whitesmoke !important;
-  }
-  
-  .hide {
-	visibility: hidden;
-  }
-  /* -------------- */
+}
+.links {
+  font-size: 15pt;
+}
+.white-text {
+  color: whitesmoke !important;
+}
+
+.hide {
+  visibility: hidden;
+}
+/* -------------- */

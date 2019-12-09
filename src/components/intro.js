@@ -27,13 +27,11 @@ const Intro = () => {
             </h4>
             <div className="about-me media-content media-right">
               <figure className="image is-128x128">
-               
                 <Img
                   fixed={data.profile.childImageSharp.fixed}
                   className="is-rounded"
                   imgStyle={{
-                    borderRadius: '50%',
-                
+                    borderRadius: '50%'
                   }}
                 />
               </figure>
@@ -49,7 +47,5 @@ const Intro = () => {
     </div>
   );
 };
-
-
 
 export default Intro;

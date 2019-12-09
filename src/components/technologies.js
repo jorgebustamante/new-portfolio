@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.scss';
-// import { StaticQuery, graphql } from 'gatsby';
 import { Parallax } from 'react-scroll-parallax';
 import {
   DiBootstrap,

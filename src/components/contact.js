@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.scss';
-// import { StaticQuery, graphql } from 'gatsby';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 

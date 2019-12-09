@@ -1,12 +1,11 @@
 import React from 'react';
-// import { StaticQuery, graphql } from 'gatsby';
 import './style.scss';
-// import { Parallax } from 'react-scroll-parallax';
 import { FaCameraRetro, FaLaptopCode, FaPaintBrush } from 'react-icons/fa';
 
 
 const About = () => (
-  <div className="columns features" id="About">
+  <div className='container'>
+  <div className="columns" id="About">
     <div className="column is-4">
       <div className="card is-shady">
         <div className="card-image has-text-centered">
@@ -79,6 +78,7 @@ const About = () => (
         </div>
       </div>
     </div>
+  </div>
   </div>
 );
 
