@@ -1,152 +1,91 @@
 import React from 'react';
-import './style.scss';
-import Slider from 'react-slick';
-import '../../node_modules/slick-carousel/slick/slick.scss';
-import '../../node_modules/slick-carousel/slick/slick-theme.scss';
 import { useStaticQuery, graphql } from 'gatsby';
-import Card from './projectCard';
+import Img from 'gatsby-image';
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
-      githubfinder: file(absolutePath: { regex: "/githubfinder.PNG/" }) {
-        ...projectImage
+      kodachrome: file(relativePath: { eq: "kodachrome.PNG" }) {
+        ...wideImage
       }
-      scs: file(absolutePath: { regex: "/SCS.JPG/" }) {
-        ...projectImage
+      ecommerce: file(relativePath: { eq: "ecommerce.jpg" }) {
+        ...wideImage
       }
-      tradesies: file(absolutePath: { regex: "/tradesies.png/" }) {
-        ...projectImage
-      }
-      kodachrome: file(absolutePath: { regex: "/kodachrome.PNG/" }) {
-        ...projectImage
-      }
-      bamazon: file(absolutePath: { regex: "/bamazon1.PNG/" }) {
-        ...projectImage
-      }
-      todo: file(absolutePath: { regex: "/todo.PNG/" }) {
-        ...projectImage
+      canelita: file(relativePath: { eq: "CanelitaCap.JPG" }) {
+        ...wideImage
       }
     }
   `);
-
-  const settings = {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    infinite: true,
-    arrows: true,
-    speed: 500,
-    centerMode: true,
-    centerPadding: '10px',
-    adaptiveHeight: true,
-
-    responsive: [
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          infinite: true,
-          arrows: true,
-          speed: 500,
-          centerMode: true,
-          centerPadding: '10px',
-          adaptiveHeight: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          infinite: true,
-          arrows: true,
-          speed: 500,
-          centerMode: true,
-          centerPadding: '10px',
-          adaptiveHeight: true
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          infinite: true,
-          arrows: true,
-          speed: 500,
-          centerMode: true,
-          centerPadding: '10px',
-          adaptiveHeight: true
-        }
-      }
-    ]
-  };
+  const ProjectsArr = [
+    {
+      Title: 'E-Commerce',
+      Description:
+        'An E-commerce space buit with tailwind CSS, gatsby, and shopify.',
+      Deploy: 'https://pauliecommerce.netlify.com/',
+      Repo: 'https://github.com/jorgebustamante/E-commerce',
+      Image: data.ecommerce.childImageSharp.fluid
+    },
+    {
+      Title: 'Canelita',
+      Description: 'Online curation of latinx artists.',
+      Deploy: 'https://jorgebustamante.github.io/canelita/',
+      Repo: 'https://github.com/jorgebustamante/canelita',
+      Image: data.canelita.childImageSharp.fluid
+    },
+    {
+      Title: 'Kodachrome Gallery',
+      Description:
+        'An image gallery built with React + Gatsby, featuring archived Kodachrome slides, inspired by swiss design style',
+      Deploy: 'https://jorgebustamante.github.io/swiss-ui/',
+      Repo: 'https://github.com/jorgebustamante/swiss-ui',
+      Image: data.kodachrome.childImageSharp.fluid
+    }
+  ];
   return (
-    <div className="columns">
-      <div
-        id="Projects"
-        className="column is-mobile is-10 is-offset-1 is-offset-1-mobile is-10-mobile"
-      >
-        <div className="scrolling-wrapper">
-          <Slider {...settings}>
-          <Card
-                fluid={data.kodachrome.childImageSharp.fluid}
-                title="Kodachrome Gallery"
-                description="An image gallery built with React + Gatsby.js
-              featuring archived kodachrome slides, inspired by Swiss design style."
-                github="https://github.com/jorgebustamante/swiss-ui"
-                deploy="https://jorgebustamante.github.io/swiss-ui/"
-              />
-              <Card
-                fluid={data.githubfinder.childImageSharp.fluid}
-                title="React Github Finder"
-                description="A web app featuring React hooks and the Github API to search for users
-                 on github and view relevant profile information in a concise manner."
-                github="https://github.com/jorgebustamante/react-github-finder"
-                deploy="https://rodriguez-react-github-finder.netlify.com/"
-              />
-              <Card
-                fluid={data.scs.childImageSharp.fluid}
-                title="Seattle Coffee Search"
-                description="Neighborhood oriented Cafe locator utilizing Yelp
-              and Google Maps API."
-                github="https://github.com/macdhollister/Seattle-Coffee-Search"
-                deploy="https://macdhollister.github.io/Seattle-Coffee-Search/"
-              />
-              <Card
-                fluid={data.tradesies.childImageSharp.fluid}
-                title="Tradesies"
-                description=" Community oriented Web app for Trading and
-              bartering goods."
-                github="https://github.com/Jostrange/Project2Giraffe"
-                deploy="https://tradesies-app.herokuapp.com/"
-              />
-
-              <Card
-                fluid={data.bamazon.childImageSharp.fluid}
-                title="Backend Merchant"
-                description="A backend node.js merchant application. Logically
-              replicating the purchase and inventory function of
-              online shopping."
-                github="https://github.com/jorgebustamante/bamazon/"
-              />
-              <Card
-                fluid={data.todo.childImageSharp.fluid}
-                title="Sequelize To-Do list"
-                description="To-do list logic web app using Sequelize for
-              queries and Handlebars.js for templating."
-                github="https://github.com/jorgebustamante/sequelize-todo-list"
-              />
-          </Slider>
+    <main className='py-2 px-4 md:px-12' id='Projects'>
+      <div className='md:px-4'>
+        <div className='flex md:-mx-2 flex-wrap'>
+          {/* ///////// */}
+          {ProjectsArr.map(Item => (
+            <div className='w-full md:w-1/2 lg:w-1/3 px-2 mb-4 ' key={'item'}>
+              <div className='bg-white rounded-lg overflow-hidden shadow hover:shadow-md'>
+                <Img
+                  className='h-56 w-full object-cover object-center'
+                  fluid={Item.Image}
+                  alt='screencap'
+                />
+                <div className='p-4 h-auto md:h-40 lg:h-48'>
+                  <p className='block text-gray-800 font-semibold mb-2 text-lg md:text-base lg:text-lg'>
+                    {Item.Title}{' '}
+                  </p>
+                  <div className='text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm'>
+                    {Item.Description}
+                  </div>
+                  <div className=' my-2 flex flex-col'>
+                    <a
+                      className='text-blue-500 font-bold hover:underline'
+                      href={`${Item.Deploy}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Deploy
+                    </a>
+                    <a
+                      className='text-blue-500 font-bold hover:underline'
+                      href={`${Item.Repo}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Repo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
-
 export default Projects;

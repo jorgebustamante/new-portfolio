@@ -1,13 +1,10 @@
-// import React from 'react';
 import {  graphql } from 'gatsby';
-
 export const query = graphql`
-  fragment projectImage on File {
+  fragment wideImage on File {
     childImageSharp {
-      fluid(maxWidth: 210) {
+      fluid(maxWidth: 600) {
         ...GatsbyImageSharpFluid
       }
     }
   }
 `;
-
