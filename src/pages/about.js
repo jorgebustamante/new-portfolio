@@ -21,7 +21,7 @@ const AboutPage=()=> {
     }
   `);
   return (
-    <>
+    <div className='flex flex-col font-sans min-h-screen text-gray-900 bg-gray-100'>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title='About'
@@ -41,7 +41,7 @@ const AboutPage=()=> {
                   alt='paulie at vasquez rocks'
                   className='rounded-lg'
                 />
-                <p className='absolute z-10 font-bold text-xl text-white top-0 mx-4'>
+                <p className='absolute font-bold text-xl text-white top-0 mx-4'>
                   <span className='low-light-red'>Vasquez Rocks Agua Dulce 2018, Ricoh GXR100</span>
                 </p>
               </div>
@@ -72,7 +72,7 @@ const AboutPage=()=> {
                   alt='paulie when younger'
                   className='rounded-lg'
                 />
-                <p className='absolute z-10 font-bold text-xl text-white top-0 mx-4'>
+                <p className='absolute font-bold text-xl text-white top-0 mx-4'>
                   <span className='low-light-red'> Kinwav studio Seattle 2016, Sony A7II</span>
                 </p>
               </div>
@@ -85,12 +85,12 @@ const AboutPage=()=> {
                   alt='paulie bartending'
                   className='rounded-lg'
                 />
-                <p className='absolute z-10 font-bold text-xl text-white top-0 mx-4'>
+                <p className='absolute font-bold text-xl text-white top-0 mx-4'>
                  <span className='low-light-red'>Bar Ciudad Seattle 2019, iPhone SE</span> 
                 </p>
               </div>
               <p className='md:w-1/2 md:px-4'>
-                In 2018 I had gained significant interest in software
+                In 2018 I had gained interest in software
                 development and embarked on a significant journey of learning.
                 Filled with hardship and unending determination, dedicating all
                 of my time to supporting myself and growth within my field. I
@@ -104,7 +104,7 @@ const AboutPage=()=> {
         </div>
       </section>
       <Footer />
-    </>
+    </div>
   );
 }
 

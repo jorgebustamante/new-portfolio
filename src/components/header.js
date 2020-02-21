@@ -18,7 +18,7 @@ const Header = () => {
           </div>
           <div className='block md:hidden flex'>
             <HamburgerSqueeze
-              className='z-10'
+              className='z-20'
               isActive={isActive}
               onClick={() => toggleButton(!isActive)}
               barColor={!isActive ? '#2D3748' : '#FFFFFF'}
@@ -34,7 +34,7 @@ const Header = () => {
             ].map(navigationItem => (
               <li className='mt-3 md:mt-0 md:ml-6 hover:underline' key={navigationItem.title}>
                 <Link to={navigationItem.route}>
-                  <a className='block text-red-500'>{navigationItem.title}</a>
+                  <p className='block text-red-500'>{navigationItem.title}</p>
                 </Link>
               </li>
             ))}
@@ -42,7 +42,7 @@ const Header = () => {
         </div>
       </header>
       <div
-        className={`${isActive} fixed bg-gray-800 h-screen w-1/2 flex flex-col right-0 md:hidden lg:hidden`}
+        className={`${isActive} fixed bg-gray-800 h-screen w-1/2 flex flex-col right-0 md:hidden lg:hidden z-10`}
         id='SideMenu'
       >
         <ul className='flex-col mt-16'>
