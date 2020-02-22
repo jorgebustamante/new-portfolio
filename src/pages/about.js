@@ -27,7 +27,7 @@ const AboutPage=()=> {
         title='About'
       />
       <Header />
-
+      <div className=' py-4'>
       <section className='flex flex-col bg-gray-100'>
         <div className='lg:w-1/2 md:w-3/4 w-10/12 mx-auto'>
           <h2 className='font-bold mb-3 text-4xl text-gray-800'>
@@ -103,6 +103,7 @@ const AboutPage=()=> {
           </div>
         </div>
       </section>
+      </div>
       <Footer />
     </div>
   );

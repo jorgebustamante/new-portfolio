@@ -32,7 +32,7 @@ const Header = () => {
               // { title: 'Design', route: '/design' },
               // { title: 'Blog', route: '/blog' }
             ].map(navigationItem => (
-              <li className='mt-3 md:mt-0 md:ml-6 hover:underline' key={navigationItem.title}>
+              <li className='mt-3 md:mt-0 md:ml-6 hover:underline text-red-700' key={navigationItem.title}>
                 <Link to={navigationItem.route}>
                   <p className='block text-red-500'>{navigationItem.title}</p>
                 </Link>

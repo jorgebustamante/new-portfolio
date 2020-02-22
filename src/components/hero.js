@@ -19,7 +19,7 @@ const Hero = () => {
   `);
   const image = data.file.childImageSharp.fluid;
   return (
-    <div>
+    // <div>
       <div className=''>
         <div className='container px-4 md:px-0 py-6 mx-auto flex flex-wrap flex-col md:flex-row items-center'>
           {/*Left Col*/}
@@ -41,7 +41,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
