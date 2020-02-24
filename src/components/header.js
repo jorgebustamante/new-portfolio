@@ -42,7 +42,7 @@ const Header = () => {
         </div>
       </header>
       <div
-        className={`${isActive} fixed bg-gray-800 h-screen w-1/2 flex flex-col right-0 md:hidden lg:hidden z-10`}
+        className={`${isActive? `true` : `false`} fixed bg-gray-800 h-screen w-1/2 flex flex-col right-0 md:hidden lg:hidden z-10`}
         id='SideMenu'
       >
         <ul className='flex-col mt-16'>
