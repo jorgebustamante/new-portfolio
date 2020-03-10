@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 import SEO from '../components/seo';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { useSpring, animated } from 'react-spring';
 import '../css/style.css'
 
 const AboutPage=()=> {
@@ -20,14 +21,19 @@ const AboutPage=()=> {
       }
     }
   `);
+   const animationProps = useSpring({
+    opacity: 1,
+    marginTop: 0,
+    from: { opacity: 0, marginTop: 100 }
+  });
   return (
-    <div className='flex flex-col font-sans min-h-screen text-gray-900 bg-gray-100'>
+    <div className='flex flex-col font-sans min-h-screen text-gray-900 bg-gray-100' >
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title='About'
       />
       <Header />
-      <div className=' py-4'>
+      <animated.div className=' py-4' style={animationProps}>
       <section className='flex flex-col bg-gray-100'>
         <div className='lg:w-1/2 md:w-3/4 w-10/12 mx-auto'>
           <h2 className='font-bold mb-3 text-4xl text-gray-800'>
@@ -103,7 +109,7 @@ const AboutPage=()=> {
           </div>
         </div>
       </section>
-      </div>
+      </animated.div>
       <Footer />
     </div>
   );
