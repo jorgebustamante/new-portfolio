@@ -27,7 +27,7 @@ const Hero = () => {
 
   return (
     <animated.div className='' style={animationProps}>
-      <div className='container px-4 md:px-0 py-6 mx-auto flex flex-wrap flex-col md:flex-row items-center'>
+      <div className='mx-8 md:mx-16 py-6 flex flex-col md:flex-row justify-between'>
         {/*Left Col*/}
         <div className='flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left px-6 py-1 bg-white rounded-lg shadow'>
           <div className='h-1 mx-auto gradient w-full opacity-25 my-0 py-0 rounded-full'></div>
@@ -42,7 +42,7 @@ const Hero = () => {
           <div className='h-1 mx-auto gradient w-full opacity-25 my-0 py-0 rounded-full'></div>
         </div>
         {/*Right Col*/}
-        <div className='w-full md:w-3/5 px-6 text-center'>
+        <div className='w-full md:w-3/5 md:pl-8 text-center'>
           <Img fluid={image} alt='vector image of a sun over mountains' />
         </div>
       </div>

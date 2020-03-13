@@ -34,8 +34,8 @@ const AboutPage=()=> {
       />
       <Header />
       <animated.div className=' py-4' style={animationProps}>
-      <section className='flex flex-col bg-gray-100'>
-        <div className='lg:w-1/2 md:w-3/4 w-10/12 mx-auto'>
+      <section className='flex flex-col items-center bg-gray-100 mx-8 md:mx-16'>
+        <div className='md:w-3/4 w-full'>
           <h2 className='font-bold mb-3 text-4xl text-gray-800'>
             About Paulie:
           </h2>
@@ -58,7 +58,7 @@ const AboutPage=()=> {
                 jobs such as baristing, coffee roasting, and bartending.
               </p>
             </div>
-            <div className='flex flex-wrap py-4 align-middle'>
+            <div className='flex flex-wrap-reverse md:flex-wrap py-4 align-middle'>
               <p className='md:w-1/2 md:px-4'>
                 In Seattle I worked contract roles in commercial photography for
                 years, where I was mentored by{' '}

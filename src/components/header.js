@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
       <header className='bg-white shadow m-0'>
-        <div className='flex flex-wrap md:flex-no-wrap items-center justify-between max-w-full m-0 px-4 py-2 md:py-6 md:px-8 '>
+        <div className='flex flex-wrap md:flex-no-wrap items-center justify-between max-w-full mx-8 md:mx-16 py-6 md:py-6'>
           <div className='flex items-center'>
             <Link to='/'>
               <a className='font-bold text-2xl text-white bg-red-500 rounded-full px-3 py-3 hover:shadow-md hover:bg-red-600'>
@@ -18,7 +18,8 @@ const Header = () => {
           </div>
           <div className='block md:hidden flex'>
             <HamburgerSqueeze
-              className='z-20'
+              className='z-20 p-0'
+              buttonStyle={{ padding: '0px' }}
               isActive={isActive}
               onClick={() => toggleButton(!isActive)}
               barColor={!isActive ? '#2D3748' : '#FFFFFF'}

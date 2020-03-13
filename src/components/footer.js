@@ -4,7 +4,7 @@ import {IoIosMail} from 'react-icons/io'
 
 const Footer = () => {
   return (
-    <footer className='bg-gray-100'>
+    <footer className='bg-gray-100 mx-4 md:mx-16'>
       <nav className='flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-4xl md:text-6xl text-red-500'>
         <a
           href='https://www.linkedin.com/in/paulie-rodriguez/'

@@ -42,12 +42,12 @@ const Projects = () => {
     }
   ];
   return (
-    <main className='py-2 px-4 md:px-12' id='Projects'>
-      <div className='md:px-4'>
-        <div className='flex md:-mx-2 flex-wrap'>
+    <main className='py-2 mx-8 md:mx-16' id='Projects'>
+      <div className=''>
+        <div className='flex flex-wrap justify-between'>
           {/* ///////// */}
           {ProjectsArr.map(Item => (
-            <div className='w-full md:w-1/2 lg:w-1/3 px-2 mb-4 ' key={'item'}>
+            <div className='w-full md:w-1/2 lg:w-2/7 mb-4' key={'item'}>
               <div className='bg-white rounded-lg overflow-hidden shadow hover:shadow-md'>
                 <Img
                   className='h-56 w-full object-cover object-center'
