@@ -49,7 +49,7 @@ const Projects = () => {
         <div className='flex flex-wrap justify-between'>
           {/* ///////// */}
           {ProjectsArr.map(Item => (
-            <div className='w-full md:w-1/2 lg:w-2/7 mb-4' key={'item'}>
+            <div className='w-full md:w-1/2 lg:w-2/7 mb-4' key={Item.Title}>
               <div className='bg-white rounded-lg overflow-hidden shadow hover:shadow-md'>
                 <Img
                   className='h-56 w-full object-cover object-center'

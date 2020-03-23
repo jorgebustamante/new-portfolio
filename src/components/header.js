@@ -10,10 +10,10 @@ const Header = () => {
       <header className='bg-white shadow m-0'>
         <div className='flex flex-wrap md:flex-no-wrap items-center justify-between max-w-full mx-8 md:mx-16 py-6 md:py-6'>
           <div className='flex items-center'>
-            <Link to='/'>
-              <a className='font-bold text-2xl text-white bg-red-500 rounded-full px-3 py-3 hover:shadow-md hover:bg-red-600'>
+            <Link to='/' className=''>
+              <p className='leading-none font-bold text-xl text-white bg-red-500 rounded-full px-3 py-3 hover:shadow-md hover:bg-red-600'>
                 PR
-              </a>
+              </p>
             </Link>
           </div>
           <div className='block md:hidden flex'>
@@ -61,9 +61,9 @@ const Header = () => {
                 to={navigationItem.route}
                 onClick={() => toggleButton(!isActive)}
               >
-                <a className=' text-white block ml-4 text-2xl'>
+                <p className=' text-white block ml-4 text-2xl'>
                   {navigationItem.title}
-                </a>
+                </p>
               </Link>
             </li>
           ))}
