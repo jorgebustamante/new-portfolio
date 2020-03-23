@@ -44,6 +44,8 @@ const Projects = () => {
   return (
     <main className='py-2 mx-8 md:mx-16' id='Projects'>
       <div className=''>
+      <h1 className='text-4xl font-bold text-gray-800'>Featured projects:</h1>
+
         <div className='flex flex-wrap justify-between'>
           {/* ///////// */}
           {ProjectsArr.map(Item => (
