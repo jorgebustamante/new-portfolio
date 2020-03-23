@@ -1,9 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Paulie Rodriguez`,
-    description: `Paulie's portfolio`,
-    author: `@Paulie_dev`,
-    siteUrl: `https://www.paulierodriguez.dev`
+    titleTemplate: " · and Knuckles",
+    description: `Coffee powered tech fellow`,
+    twitterUsername: `@Paulie_dev`,
+    url: `https://www.paulierodriguez.dev`,
+    image: "/images/LogoWide.png", // Path to your image you placed in the 'static' folder
+
   },
   plugins: [
     "gatsby-plugin-eslint",
