@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Paulie Rodriguez`,
-    titleTemplate: " · and Knuckles",
-    description: `Coffee powered tech fellow`,
+    title: `Yo! I'm Paulie Rodriguez`,
+    titleTemplate: "Paulie and Knuckles",
+    description: `Coffee powered UI/UX engineer`,
     twitterUsername: `@Paulie_dev`,
-    url: `https://www.paulierodriguez.dev`,
+    url: `https://paulierodriguez.dev`,
     image: "/images/LogoWide.png", // Path to your image you placed in the 'static' folder
 
   },
