@@ -35,8 +35,8 @@ const Projects = () => {
       Title: 'Kodachrome Gallery',
       Description:
         'An image gallery built with React + Gatsby, featuring archived Kodachrome slides, inspired by swiss design style',
-      Deploy: 'https://jorgebustamante.github.io/swiss-ui/',
-      Repo: 'https://kodachrome-gallery.netlify.app/',
+      Deploy: 'https://kodachrome-gallery.netlify.app/',
+      Repo: 'https://jorgebustamante.github.io/swiss-ui',
       Image: data.kodachrome.childImageSharp.fluid
     }
   ];
