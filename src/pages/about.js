@@ -55,7 +55,7 @@ const AboutPage = () => {
                 </div>
 
                 <div className="flex flex-col lg:w-1/2 lg:ml-12">
-                  <p className="josefin text-4xl lg:text-5xl text-gray-900">Atlan at Heart</p>
+                  <p className="josefin text-4xl lg:text-5xl text-gray-900">Aztlan at Heart</p>
 
                   <p className="lg:leading-relaxed lg:text-2xl text-xl">
                     My home is dearly the pacific, growing up in California,
