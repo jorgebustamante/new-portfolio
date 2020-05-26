@@ -27,7 +27,7 @@ const Projects = () => {
     {
       Title: 'Cholo Name Generator',
       Description: 'A cholo name generator in vanilla JS, names sourced from Homies LLC.',
-      Deploy: 'https://jorgebustamante.github.io/canelita/',
+      Deploy: 'https://jorgebustamante.github.io/cholo-name-generator/',
       Repo: 'https://github.com/jorgebustamante/cholo-name-generator',
       Image: data.cholo.childImageSharp.fluid
     },
