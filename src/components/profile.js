@@ -14,7 +14,7 @@ const Profile = () => {
       }
     }
   `);
-  return <Img className='rounded-full w-1/2' fluid={data.file.childImageSharp.fluid} alt='paulie face' />;
+  return <Img className='rounded-full' fluid={data.file.childImageSharp.fluid} alt='paulie face' />;
 };
 
 export default Profile;

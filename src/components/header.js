@@ -11,14 +11,14 @@ const Header = () => {
         <div className='flex flex-wrap md:flex-no-wrap items-center justify-between max-w-full mx-8 md:mx-16 py-6 md:py-6'>
           <div className='flex items-center'>
             <Link to='/' className=''>
-              <p className='leading-none font-bold text-xl text-white bg-red-500 rounded-full px-3 py-3 hover:shadow-md hover:bg-red-600'>
+              <p className='josefin leading-none font-bold text-xl text-white bg-red-500 rounded-full px-3 py-3 hover:shadow-md hover:bg-red-600'>
                 PR
               </p>
             </Link>
           </div>
-          <div className='block md:hidden flex'>
+          <div className='block md:hidden flex rounded-none'>
             <HamburgerSqueeze
-              className='z-20 p-0'
+              className='z-20 p-0 straight'
               buttonStyle={{ padding: '0px' }}
               isActive={isActive}
               onClick={() => toggleButton(!isActive)}
@@ -33,9 +33,9 @@ const Header = () => {
               // { title: 'Design', route: '/design' },
               // { title: 'Blog', route: '/blog' }
             ].map(navigationItem => (
-              <li className='mt-3 md:mt-0 md:ml-6 hover:underline text-red-700' key={navigationItem.title}>
-                <Link to={navigationItem.route}>
-                  <p className='block text-red-500'>{navigationItem.title}</p>
+              <li className='mt-3 md:mt-0 md:ml-6 hover:underline text-red-700 opensans' key={navigationItem.title}>
+                <Link activeClassName='font-bold' to={navigationItem.route}>
+                  <p className='block text-red-500 underline'>{navigationItem.title}</p>
                 </Link>
               </li>
             ))}
@@ -58,6 +58,7 @@ const Header = () => {
               key={navigationItem.title + 'side'}
             >
               <Link
+              activeClassName='font-bold'
                 to={navigationItem.route}
                 onClick={() => toggleButton(!isActive)}
               >

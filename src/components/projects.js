@@ -8,45 +8,44 @@ const Projects = () => {
       kodachrome: file(relativePath: { eq: "kodachrome.PNG" }) {
         ...wideImage
       }
-      ecommerce: file(relativePath: { eq: "ecommerce.jpg" }) {
+      hals: file(relativePath: { eq: "hals.png" }) {
         ...wideImage
       }
-      canelita: file(relativePath: { eq: "CanelitaCap.JPG" }) {
+      cholo: file(relativePath: { eq: "cholo.png" }) {
         ...wideImage
       }
     }
   `);
   const ProjectsArr = [
     {
-      Title: 'E-Commerce',
+      Title: "Hal's Office",
       Description:
-        'An E-commerce space buit with tailwind CSS, gatsby, and shopify.',
-      Deploy: 'https://pauliecommerce.netlify.com/',
-      Repo: 'https://github.com/jorgebustamante/E-commerce',
-      Image: data.ecommerce.childImageSharp.fluid
+        'A business website built with Gatsby, Contentful CMS and Tailwind.',
+      Deploy: 'https://halsoffice.netlify.app/',
+      Image: data.hals.childImageSharp.fluid
     },
     {
-      Title: 'Canelita',
-      Description: 'Online curation of latinx artists.',
+      Title: 'Cholo Name Generator',
+      Description: 'A cholo name generator in vanilla JS, names sourced from Homies LLC.',
       Deploy: 'https://jorgebustamante.github.io/canelita/',
-      Repo: 'https://github.com/jorgebustamante/canelita',
-      Image: data.canelita.childImageSharp.fluid
+      Repo: 'https://github.com/jorgebustamante/cholo-name-generator',
+      Image: data.cholo.childImageSharp.fluid
     },
     {
       Title: 'Kodachrome Gallery',
       Description:
         'An image gallery built with React + Gatsby, featuring archived Kodachrome slides, inspired by swiss design style',
       Deploy: 'https://jorgebustamante.github.io/swiss-ui/',
-      Repo: 'https://github.com/jorgebustamante/swiss-ui',
+      Repo: 'https://kodachrome-gallery.netlify.app/',
       Image: data.kodachrome.childImageSharp.fluid
     }
   ];
   return (
     <main className='py-2 mx-8 md:mx-16' id='Projects'>
       <div className=''>
-      <h1 className='text-4xl font-bold text-gray-800'>Featured projects:</h1>
+      <h1 className='text-4xl font-bold text-gray-800 josefin'>My Work:</h1>
 
-        <div className='flex flex-wrap justify-between'>
+        <div className='flex lg:flex-row flex-col justify-between'>
           {/* ///////// */}
           {ProjectsArr.map(Item => (
             <div className='w-full md:w-1/2 lg:w-2/7 mb-4' key={Item.Title}>
@@ -57,10 +56,10 @@ const Projects = () => {
                   alt='screencap'
                 />
                 <div className='p-4 h-auto md:h-40 lg:h-48'>
-                  <p className='block text-gray-800 font-semibold mb-2 text-lg md:text-base lg:text-lg'>
+                  <p className='block text-gray-800 font-semibold mb-2 text-lg md:text-base lg:text-lg josefin'>
                     {Item.Title}{' '}
                   </p>
-                  <div className='text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm'>
+                  <div className='text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm opensans'>
                     {Item.Description}
                   </div>
                   <div className=' my-2 flex flex-col'>
@@ -70,16 +69,17 @@ const Projects = () => {
                       target='_blank'
                       rel='noopener noreferrer'
                     >
-                      Deploy
+                      View Website
                     </a>
-                    <a
+                    {Item.Repo ? <a
                       className='text-blue-500 font-bold hover:underline'
                       href={`${Item.Repo}`}
                       target='_blank'
                       rel='noopener noreferrer'
                     >
                       Repo
-                    </a>
+                    </a> : <div/>}
+                    
                   </div>
                 </div>
               </div>

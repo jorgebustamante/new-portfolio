@@ -27,22 +27,27 @@ const Hero = () => {
 
   return (
     <animated.div className='' style={animationProps}>
-      <div className='mx-8 md:mx-16 py-6 flex flex-col md:flex-row justify-between'>
+      <div className='mx-8 md:mx-16 py-6 flex flex-col lg:flex-row justify-between'>
         {/*Left Col*/}
-        <div className='flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left px-6 py-1 bg-white rounded-lg shadow'>
-          <div className='h-1 mx-auto gradient w-full opacity-25 my-0 py-0 rounded-full'></div>
-          <Profile />
-          <h1 className='my-4 text-5xl font-bold leading-tight'>
+        
+        <div className='flex flex-col w-full lg:w-1/2 justify-center items-start text-center md:text-left lg:px-6 lg:mb-0 mb-4 bg-white rounded-lg shadow'>
+          <div className='h-1 mx-auto gradient w-full opacity-25 mb-4 py-0 rounded-full'></div>
+          <div className='lg:flex-row flex-col flex justify between'>
+            <div className='w-1/2 lg:mx-0 mx-auto'>          <Profile /> </div>
+          <h1 className='my-4 mx-4 text-5xl font-bold leading-tight josefin text-gray-900'>
             Yo! I&#39;m Paulie Rodriguez
           </h1>
-          <p className='leading-normal text-2xl mb-8 text-gray-800'>
-            I&#39;m a UI/UX engineer with a background in commercial
+          </div>
+      
+          <p className='leading-normal text-2xl text-left lg:mb-8 mb-4 mx-4 text-gray-800'>
+            I&#39;m a UI/UX developer with a background in commercial
             photography, bartending and coffee roasting!
           </p>
           <div className='h-1 mx-auto gradient w-full opacity-25 my-0 py-0 rounded-full'></div>
         </div>
         {/*Right Col*/}
-        <div className='w-full md:w-3/5 md:pl-8 text-center'>
+
+        <div className='w-full lg:w-1/2 lg:pl-8 text-center'>
           <Img fluid={image} alt='vector image of a sun over mountains' />
         </div>
       </div>
