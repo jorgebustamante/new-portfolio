@@ -21,7 +21,7 @@ const Projects = () => {
       Title: "Hal's Office",
       Description:
         'A business website built with Gatsby, Contentful CMS and Tailwind.',
-      Deploy: 'https://halsoffice.netlify.app/',
+      Deploy: 'http://halsofficecoffee.com/',
       Image: data.hals.childImageSharp.fluid
     },
     {
