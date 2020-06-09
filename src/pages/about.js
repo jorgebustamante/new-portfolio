@@ -21,13 +21,15 @@ const AboutPage = () => {
     }
   `);
   const animationProps = useSpring({
-    opacity: 1,
-    marginTop: 0,
-    from: { opacity: 0, marginTop: 100 },
+    // marginTop: 0,
+    // from: { opacity: 0, marginTop: 100 },
+    config: { mass: 10, tension: 500, friction: 200 },
+    from: { opacity: 0,transform: "translate(0,10%)" },
+    to: {opacity:1 , transform: "translate(0%,0)" },
   });
   return (
     <Layout>
-    <div className="flex flex-col font-sans min-h-screen text-gray-900 bg-gray-100">
+    <div className="flex flex-col font-sans min-h-screen text-gray-900 bg-gray-100 mt-1">
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="About"

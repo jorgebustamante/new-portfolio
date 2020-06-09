@@ -41,14 +41,14 @@ const Projects = () => {
     }
   ];
   return (
-    <main className='py-2 mx-8 md:mx-16' id='Projects'>
+    <main className='py-2 mx-8 md:mx-32' id='Projects'>
       <div className=''>
-      <h1 className='text-4xl font-bold text-gray-800 josefin'>My Work:</h1>
+      <h1 className='text-4xl font-bold text-gray-800 josefin'>Selected Work:</h1>
 
-        <div className='flex lg:flex-row flex-col justify-between'>
+        <div className='flex lg:flex-row flex-col items-center justify-between'>
           {/* ///////// */}
           {ProjectsArr.map(Item => (
-            <div className='w-full md:w-1/2 lg:w-2/7 mb-4' key={Item.Title}>
+            <div className='lg:w-2/7 sm:w-3/4 w-full mb-4' key={Item.Title}>
               <div className='bg-white rounded-lg overflow-hidden shadow hover:shadow-md'>
                 <Img
                   className='h-56 w-full object-cover object-center'

@@ -1,57 +1,41 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import Profile from './profile';
-import { useSpring, animated } from 'react-spring';
+import React from "react";
+
+import Profile from "./profile";
+import { useTrail, animated } from "react-spring";
 
 const Hero = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "LogoWide.png" }) {
-        childImageSharp {
-          # Specify a fixed image and fragment.
-          # The default width is 400 pixels
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
-  const image = data.file.childImageSharp.fluid;
-  const animationProps = useSpring({
-    opacity: 1,
-    marginTop: 0,
-    from: { opacity: 0, marginTop: 100 }
+  const items = [
+    <p key="a">Yo! 👋🏽</p>,
+    <p key="b">
+      I&apos;m <span className="low-light-red">Paulie Rodriguez</span>
+    </p>,
+    <p key="c">a UX Designer,</p>,
+    <p key="d">and Software Developer.</p>,
+  ];
+
+  const trail = useTrail(items.length, {
+    config: { mass: 15, tension: 2000, friction: 200 },
+    from: { transform: "translate(0,60%)" },
+    to: { transform: "translate(0%,0)" },
   });
 
   return (
-    <animated.div className='' style={animationProps}>
-      <div className='mx-8 md:mx-16 py-6 flex flex-col lg:flex-row justify-between'>
-        {/*Left Col*/}
-        
-        <div className='flex flex-col w-full lg:w-1/2 justify-center items-start text-center md:text-left lg:px-6 lg:mb-0 mb-4 bg-white rounded-lg shadow'>
-          <div className='h-1 mx-auto gradient w-full opacity-25 mb-4 py-0 rounded-full'></div>
-          <div className='lg:flex-row flex-col flex justify between'>
-            <div className='w-1/2 lg:mx-0 mx-auto'>          <Profile /> </div>
-          <h1 className='my-4 mx-4 text-5xl font-bold leading-tight josefin text-gray-900'>
-            Yo! I&#39;m Paulie Rodriguez
-          </h1>
-          </div>
-      
-          <p className='leading-normal text-2xl text-left lg:mb-8 mb-4 mx-4 text-gray-800'>
-            I&#39;m a UI/UX developer with a background in commercial
-            photography, bartending and coffee roasting!
-          </p>
-          <div className='h-1 mx-auto gradient w-full opacity-25 my-0 py-0 rounded-full'></div>
-        </div>
-        {/*Right Col*/}
-
-        <div className='w-full lg:w-1/2 lg:pl-8 text-center'>
-          <Img fluid={image} alt='vector image of a sun over mountains' />
+    <div className="lg:py-16 py-8 mx-8 md:mx-32 flex lg:flex-row flex-col josefin xl:text-5xl md:text-4xl text-3xl text-4xl text-gray-800 leading-tight justify-between lg:items-center">
+      <div className="items-center">
+        <div className="lg:mb-0 mb-4 flex flex-col items-start">
+          {trail.map(({ ...rest }, index) => (
+            <animated.div
+              key={index}
+              className={`trails-text  ${items[index].class}`}
+              style={{ ...rest }}
+            >
+              {items[index]}
+            </animated.div>
+          ))}
         </div>
       </div>
-    </animated.div>
+      <Profile />
+    </div>
   );
 };
 

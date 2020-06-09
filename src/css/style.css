@@ -19,7 +19,7 @@ body{
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 .low-light-red{
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #F56565 50%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, #F56565 40%);
     padding-right: 15px;
 }
 .josefin{
@@ -30,6 +30,9 @@ body{
 }
 .straight{
     border-radius: 0px !important;
+}
+.heaviest{
+    font-weight: 700;
 }
 /* purgecss end ignore */
 @tailwind utilities;
