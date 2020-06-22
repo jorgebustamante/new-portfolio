@@ -34,15 +34,15 @@ const AboutPage = () => {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="About"
       />
-      <animated.div className=" py-4" style={animationProps}>
-        <section className="flex flex-col items-center bg-gray-100 mx-8 md:mx-16">
+      <animated.div className="py-4" style={animationProps}>
+        <section className="flex flex-col items-center bg-gray-100 mx-8 md:mx-0">
           <div className="md:w-3/4 w-full">
             <h2 className="font-bold mb-3 lg:text-6xl text-4xl text-gray-800 josefin">
               About Me:
             </h2>
 
             <div className="mb-6 text-gray-800 text-lg w-full">
-              <div className="flex lg:flex-row flex-col py-4 justify-between">
+              <div className="flex lg:flex-row flex-col py-4 justify-between border-b-2 border-gray-800">
                 <div className="lg:w-1/2 relative">
                   <Img
                     fluid={data.vasquez.childImageSharp.fluid}
@@ -59,7 +59,7 @@ const AboutPage = () => {
                 <div className="flex flex-col lg:w-1/2 lg:ml-12">
                   <p className="josefin text-4xl lg:text-5xl text-gray-900">Aztlan at Heart</p>
 
-                  <p className="lg:leading-relaxed lg:text-2xl text-xl">
+                  <p className="lg:leading-relaxed xl:text-2xl text-xl">
                     My home is dearly the pacific, growing up in California,
                     Oregon and Washington I spent my youth experiencing all the
                     west coast has to offer. I am self-made, supporting myself
@@ -69,11 +69,11 @@ const AboutPage = () => {
                 </div>
               </div>
 
-              <div className="flex lg:flex-row flex-col-reverse py-4 align-middle">
+              <div className="flex lg:flex-row flex-col-reverse py-4 align-middle border-b-2 border-gray-800">
                 <div className="flex-col lg:w-1/2 lg:mr-12">
                   <p className="josefin lg:text-5xl text-4xl text-gray-900">Vagabond Artist</p>
 
-                  <p className=" lg:leading-relaxed lg:text-2xl text-xl">
+                  <p className=" lg:leading-relaxed xl:text-2xl text-xl">
                     In Seattle I worked contract roles in commercial photography
                     for years, where I was mentored by{" "}
                     <a
@@ -103,7 +103,7 @@ const AboutPage = () => {
                 </div>
               </div>
 
-              <div className="lg:flex-row flex-col flex py-4">
+              <div className="lg:flex-row flex-col flex py-4 border-b-2 border-gray-800">
                 <div className="w-full md:w-1/2 relative">
                   <Img
                     fluid={data.bartend.childImageSharp.fluid}
@@ -118,7 +118,7 @@ const AboutPage = () => {
                 </div>
                 <div className="flex flex-col lg:w-1/2 lg:ml-12">
                   <p className="josefin lg:text-5xl text-4xl text-gray-900">Proud Laborer</p>
-                  <p className="lg:leading-relaxed lg:text-2xl text-xl">
+                  <p className="lg:leading-relaxed xl:text-2xl text-xl">
                     In 2018 I had gained interest in software development and
                     embarked on a significant journey of learning. Filled with
                     hardship and unending determination, dedicating all of my

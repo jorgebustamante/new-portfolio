@@ -12,14 +12,11 @@ function Layout({ children }) {
   });
   return (
     <>
-      <animated.div
-        className="flex flex-col font-sans min-h-screen text-gray-900 bg-gray-100"
-        style={animationProps}
-      >
+      <div className="flex flex-col font-sans min-h-screen text-gray-900 bg-gray-100">
         <Header />
-        {children}
+        <animated.div style={animationProps}>{children}</animated.div>
         <Footer />
-      </animated.div>
+      </div>
     </>
   );
 }
