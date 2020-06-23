@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Yo! I'm Paulie Rodriguez`,
     titleTemplate: "Paulie and Knuckles",
-    description: `Coffee powered UI/UX engineer`,
+    description: `Coffee powered UX Designer and Developer`,
     twitterUsername: `@Paulie_dev`,
     url: `https://paulierodriguez.dev`,
-    image: "/images/LogoWide.png", // Path to your image you placed in the 'static' folder
+    image: "/images/OgImageGrid.png", // Path to your image you placed in the 'static' folder
 
   },
   plugins: [
@@ -69,6 +69,7 @@ module.exports = {
       options: {
         fonts: [
           `josefin sans`,
+          `yeseva one`
         ],
         display: 'swap'
       }

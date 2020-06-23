@@ -47,7 +47,7 @@ const Projects = () => {
     }
   ];
   return (
-    <main className='py-2 mx-8 md:mx-32 xl:mx-48' id='Projects'>
+    <main className='pt-4 mx-8 md:mx-32 xl:mx-48 border-t-2 border-gray-600' id='Projects'>
       <div className=''>
       <h1 className='text-4xl xl:text-5xl font-bold text-gray-800 josefin'>Selected Work:</h1>
 
@@ -62,13 +62,13 @@ const Projects = () => {
                   alt='screencap'
                 />
                 <div className='lg:w-1/3 w-full py-4 lg:pl-4 flex flex-col justify-around'>
-                  <h1 className='text-gray-800 font-semibold text-3xl xl:text-4xl josefin'>
+                  <h1 className='text-gray-900 font-semibold text-3xl xl:text-4xl yeseva'>
                     {Item.Title}{' '}
                   </h1>
-                  <div className='text-gray-600 text-base xl:text-lg leading-relaxed opensans'>
+                  <div className='text-gray-700 text-base xl:text-lg leading-relaxed josefin'>
                     {Item.Description}
                   </div>
-                  <div className='my-2 flex flex-col'>
+                  <div className='my-4 flex flex-col'>
                     <a
                       className='text-blue-500 font-bold hover:underline'
                       href={`${Item.Deploy}`}
@@ -89,7 +89,7 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex flex-row justify-between opensans text-base font-bold text-gray-600 pt-2'> 
+              <div className='flex flex-row justify-between josefin text-base font-bold text-gray-600 pt-2'> 
               <p id="tags" className=''>{Item.Tags}</p>
               <p id='date'>{Item.Date}</p>
               </div>

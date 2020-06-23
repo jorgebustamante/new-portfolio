@@ -32,12 +32,12 @@ const AboutPage = () => {
     <div className="flex flex-col font-sans min-h-screen text-gray-900 bg-gray-100 mt-1">
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="About"
+        title="About Paulie"
       />
       <animated.div className="py-4" style={animationProps}>
         <section className="flex flex-col items-center bg-gray-100 mx-8 md:mx-0">
           <div className="md:w-3/4 w-full">
-            <h2 className="font-bold mb-3 lg:text-6xl text-4xl text-gray-800 josefin">
+            <h2 className="font-bold mb-3 text-4xl text-gray-800 josefin">
               About Me:
             </h2>
 
@@ -50,16 +50,16 @@ const AboutPage = () => {
                     className="rounded-lg"
                   />
                   <p className="absolute font-bold text-xl text-white top-0 mx-4">
-                    <span className="low-light-red josefin">
+                    <span className="low-light-red josefin text-shadow">
                       Vasquez Rocks Agua Dulce 2018, Ricoh GXR100
                     </span>
                   </p>
                 </div>
 
                 <div className="flex flex-col lg:w-1/2 lg:ml-12">
-                  <p className="josefin text-4xl lg:text-5xl text-gray-900">Aztlan at Heart</p>
+                  <p className="yeseva text-4xl lg:text-5xl text-gray-900">Aztlan at Heart</p>
 
-                  <p className="lg:leading-relaxed xl:text-2xl text-xl">
+                  <p className=" xl:text-2xl text-xl josefin">
                     My home is dearly the pacific, growing up in California,
                     Oregon and Washington I spent my youth experiencing all the
                     west coast has to offer. I am self-made, supporting myself
@@ -71,9 +71,9 @@ const AboutPage = () => {
 
               <div className="flex lg:flex-row flex-col-reverse py-4 align-middle border-b-2 border-gray-800">
                 <div className="flex-col lg:w-1/2 lg:mr-12">
-                  <p className="josefin lg:text-5xl text-4xl text-gray-900">Vagabond Artist</p>
+                  <p className="yeseva lg:text-5xl text-4xl text-gray-900">Vagabond Artist</p>
 
-                  <p className=" lg:leading-relaxed xl:text-2xl text-xl">
+                  <p className="josefin xl:text-2xl text-xl">
                     In Seattle I worked contract roles in commercial photography
                     for years, where I was mentored by{" "}
                     <a
@@ -95,7 +95,7 @@ const AboutPage = () => {
                     className="rounded-lg"
                   />
                   <p className="absolute font-bold text-xl text-white top-0 mx-4">
-                    <span className="low-light-red josefin">
+                    <span className="low-light-red josefin text-shadow">
                       {" "}
                       Kinwav studio Seattle 2016, Sony A7II
                     </span>
@@ -111,14 +111,14 @@ const AboutPage = () => {
                     className="rounded-lg"
                   />
                   <p className="absolute font-bold text-xl text-white top-0 mx-4">
-                    <span className="low-light-red josefin">
+                    <span className="low-light-red josefin text-shadow">
                       Bar Ciudad Seattle 2019, iPhone SE
                     </span>
                   </p>
                 </div>
                 <div className="flex flex-col lg:w-1/2 lg:ml-12">
-                  <p className="josefin lg:text-5xl text-4xl text-gray-900">Proud Laborer</p>
-                  <p className="lg:leading-relaxed xl:text-2xl text-xl">
+                  <p className="yeseva lg:text-5xl text-4xl text-gray-900">Proud Laborer</p>
+                  <p className="josefin xl:text-2xl text-xl">
                     In 2018 I had gained interest in software development and
                     embarked on a significant journey of learning. Filled with
                     hardship and unending determination, dedicating all of my

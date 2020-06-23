@@ -20,7 +20,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="lg:py-16 py-8 mx-8 md:mx-32 xl:mx-48 flex lg:flex-row flex-col josefin xl:text-5xl md:text-4xl text-3xl text-4xl text-gray-800 leading-tight justify-between lg:items-center">
+    <div className="lg:py-16 py-8 mx-8 md:mx-32 xl:mx-48 flex lg:flex-row flex-col yeseva xl:text-5xl md:text-4xl text-3xl text-4xl text-gray-900 leading-tight justify-between lg:items-center">
       <div className="items-center">
         <div className="lg:mb-0 mb-4 flex flex-col items-start">
           {trail.map(({ ...rest }, index) => (
