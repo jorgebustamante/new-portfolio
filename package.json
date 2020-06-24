@@ -61,6 +61,6 @@
     "gatsby-plugin-eslint": "2.0.8",
     "gh-pages": "^2.2.0",
     "prettier": "1.19.1",
-    "tailwindcss": "1.1.4"
+    "tailwindcss": "^1.4.6"
   }
 }

@@ -49,7 +49,7 @@ const Projects = () => {
   return (
     <main className='pt-4 mx-8 md:mx-32 xl:mx-48 border-t-2 border-gray-600' id='Projects'>
       <div className=''>
-      <h1 className='text-4xl xl:text-5xl font-bold text-gray-800 josefin'>Selected Work:</h1>
+      <h1 className='text-4xl xl:text-5xl text-gray-800 josefin'>Selected Work:</h1>
 
         <div className='flex flex-col'>
           {/* ///////// */}
@@ -57,12 +57,12 @@ const Projects = () => {
             <div className='w-full py-8 border-b-2 border-gray-600' key={Item.Title}>
               <div className='flex flex-col lg:flex-row overflow-hidden'>
                 <Img
-                  className='lg:w-2/3 w-full'
+                  className='lg:w-2/3 w-full rounded-lg'
                   fluid={Item.Image}
                   alt='screencap'
                 />
                 <div className='lg:w-1/3 w-full py-4 lg:pl-4 flex flex-col justify-around'>
-                  <h1 className='text-gray-900 font-semibold text-3xl xl:text-4xl yeseva'>
+                  <h1 className='text-blue-900 font-semibold text-3xl xl:text-4xl yeseva'>
                     {Item.Title}{' '}
                   </h1>
                   <div className='text-gray-700 text-base xl:text-lg leading-relaxed josefin'>

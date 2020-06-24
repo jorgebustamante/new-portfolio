@@ -37,9 +37,9 @@ const AboutPage = () => {
       <animated.div className="py-4" style={animationProps}>
         <section className="flex flex-col items-center bg-gray-100 mx-8 md:mx-0">
           <div className="md:w-3/4 w-full">
-            <h2 className="font-bold mb-3 text-4xl text-gray-800 josefin">
+            <h1 className="mb-3 text-5xl text-gray-800 josefin">
               About Me:
-            </h2>
+            </h1>
 
             <div className="mb-6 text-gray-800 text-lg w-full">
               <div className="flex lg:flex-row flex-col py-4 justify-between border-b-2 border-gray-800">
@@ -57,9 +57,9 @@ const AboutPage = () => {
                 </div>
 
                 <div className="flex flex-col lg:w-1/2 lg:ml-12">
-                  <p className="yeseva text-4xl lg:text-5xl text-gray-900">Aztlan at Heart</p>
+                  <p className="yeseva text-4xl lg:text-5xl text-blue-900 pb-4">Aztlan at Heart</p>
 
-                  <p className=" xl:text-2xl text-xl josefin">
+                  <p className=" xl:text-2xl text-xl josefin leading-7">
                     My home is dearly the pacific, growing up in California,
                     Oregon and Washington I spent my youth experiencing all the
                     west coast has to offer. I am self-made, supporting myself
@@ -71,9 +71,9 @@ const AboutPage = () => {
 
               <div className="flex lg:flex-row flex-col-reverse py-4 align-middle border-b-2 border-gray-800">
                 <div className="flex-col lg:w-1/2 lg:mr-12">
-                  <p className="yeseva lg:text-5xl text-4xl text-gray-900">Vagabond Artist</p>
+                  <p className="yeseva lg:text-5xl text-4xl text-blue-900 pb-4">Vagabond Artist</p>
 
-                  <p className="josefin xl:text-2xl text-xl">
+                  <p className="josefin xl:text-2xl text-xl leading-7">
                     In Seattle I worked contract roles in commercial photography
                     for years, where I was mentored by{" "}
                     <a
@@ -117,8 +117,8 @@ const AboutPage = () => {
                   </p>
                 </div>
                 <div className="flex flex-col lg:w-1/2 lg:ml-12">
-                  <p className="yeseva lg:text-5xl text-4xl text-gray-900">Proud Laborer</p>
-                  <p className="josefin xl:text-2xl text-xl">
+                  <p className="yeseva lg:text-5xl text-4xl text-blue-900 pb-4">Proud Laborer</p>
+                  <p className="josefin xl:text-2xl text-xl leading-7">
                     In 2018 I had gained interest in software development and
                     embarked on a significant journey of learning. Filled with
                     hardship and unending determination, dedicating all of my
