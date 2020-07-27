@@ -6,9 +6,17 @@ module.exports = {
     twitterUsername: `@Paulie_dev`,
     url: `https://paulierodriguez.dev`,
     image: "/images/OgImageGrid.png", // Path to your image you placed in the 'static' folder
-
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-remark-images`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      },
+    },
     "gatsby-plugin-eslint",
     `gatsby-plugin-react-helmet`,
     {
@@ -20,25 +28,26 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
         display: `minimal-ui`,
-        icon: `src/images/cowboyBlob.png`
-      }
+        icon: `src/images/cowboyBlob.png`,
+      },
     },
     {
       resolve: "gatsby-plugin-postcss",
       options: {
         postCssPlugins: [
           require(`tailwindcss`)(`./tailwind.config.js`),
+          require(`postcss-nesting`),
           require(`autoprefixer`),
-          require(`cssnano`)
-        ]
-      }
+          require(`cssnano`),
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
-        purgeOnly: [`src/css/style.css`]
-      }
+        purgeOnly: [`src/css/style.css`],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -47,21 +56,25 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        // CommonMark mode (default: true)
-        commonmark: true,
-        // Footnotes mode (default: true)
-        footnotes: true,
-        // Pedantic mode (default: true)
-        pedantic: true,
-        // GitHub Flavored Markdown mode (default: true)
-        gfm: true,
-        // Plugins configs
-        plugins: [],
+        path: `${__dirname}/src/pages`,
+        name: "pages",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `cases`,
+        path: `${__dirname}/src/case-studies/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `caseImages`,
+        path: `${__dirname}/src/case-studies/images/`,
       },
     },
     {
@@ -69,10 +82,11 @@ module.exports = {
       options: {
         fonts: [
           `josefin sans`,
-          `yeseva one`
+          `yeseva one`,
+          `vollkorn\:600i, 700i, 800i, 900i,`,
         ],
-        display: 'swap'
-      }
-    }
-  ]
+        display: "swap",
+      },
+    },
+  ],
 };

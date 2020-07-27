@@ -1,0 +1,54 @@
+/* purgecss start ignore */
+/* note this is postcss nesting and you need postcss language support
+in your editor to avoid redlines */
+.markdown {
+  & h1 {
+    @apply text-4xl;
+    @apply italic;
+    @apply font-bold;
+    font-family: "yeseva one", Cambria, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+    @apply mx-4;
+  }
+  & h2 {
+    @apply text-2xl;
+    @apply italic;
+    @apply font-bold;
+    font-family: "yeseva one", Cambria, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+  }
+  & h3 {
+    @apply text-xl;
+  }
+  & h4 {
+    @apply text-lg;
+  }
+  & h5 {
+    @apply text-base;
+  }
+  & h6 {
+    @apply text-sm;
+  }
+
+  & a {
+    @apply text-blue-500;
+    @apply font-bold;
+  }
+  & strong {
+    @apply font-bold;
+  }
+  & img {
+    @apply rounded;
+  }
+  & p {
+    @apply pt-4;
+    @apply mx-4;
+    font-family: "josefin sans", Arial, Helvetica, sans-serif;
+  }
+  & ul {
+    @apply list-disc;
+    @apply ml-12;
+  }
+}
+
+/* purgecss end ignore */

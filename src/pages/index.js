@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Hero from '../components/hero.js';
-import Projects from '../components/projects';
+import Cases from '../components/cases';
 
 function IndexPage() {
  
@@ -11,7 +11,7 @@ function IndexPage() {
     <Layout>
     <SEO/>
     <Hero />
-    <Projects />
+    <Cases/>
     </Layout>
     </>
   );
