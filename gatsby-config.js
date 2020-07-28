@@ -43,18 +43,6 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-purgecss`,
-    //   options: {
-    //     develop: true,
-    //     tailwind: true,
-    //     // whitelistPatternsChildren: [/^markdown$/],
-    //     // whitelist: ['h1'],
-    //     ignore:[`src/css/markdown.css`, `src/css/style.css`],
-    //     // purgeOnly: [`src/css/style.css`],
-    //     content: [`${__dirname}/src/**/*.{ts,js,jsx,tsx,md,mdx}`, ]
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -94,7 +82,7 @@ module.exports = {
         display: "swap",
       },
     },
-    {     
+    {
       resolve: "gatsby-plugin-firebase",  
       options: {         
        features: {          
@@ -118,6 +106,13 @@ module.exports = {
             measurementId: "G-XELLMVWVQ0"
           } 
          }, 
-       }, 
-  ],
+       },
+       {
+        resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+        options: {
+          analyzerPort: 3000,
+          //only set this to true in local builds, not deployment prod builds
+          production: false,
+        },
+      },  ],
 };

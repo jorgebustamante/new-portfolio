@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className='bg-white'>
       <div className='w-full py-8 flex flex-col'>
-        <h4 className='mx-auto josefin text-lg text-gray-800'>I built this website with React/Gatsby.js, TailwindCSS, PostCSS, MDX.js, react-spring and deploy via netlify.</h4>
-        <h4 className='mx-auto josefin text-lg text-gray-800'>Don&apos;t you know I love that JAMstack?</h4>
+        <p className='mx-auto josefin text-lg text-gray-800'>I built this website with React/Gatsby.js, TailwindCSS, PostCSS, MDX.js, react-spring and deploy via netlify.</p>
+        <p className='mx-auto josefin text-lg text-gray-800'>Don&apos;t you know I love that JAMstack?</p>
       </div>
       <nav className='flex justify-between max-w-6xl mx-auto py-4 md:py-8 text-4xl md:text-6xl text-red-500'>
         <a
