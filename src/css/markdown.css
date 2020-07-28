@@ -1,6 +1,5 @@
 /* purgecss start ignore */
-/* note this is postcss nesting and you need postcss language support
-in your editor to avoid redlines */
+
 .markdown {
   & h1 {
     @apply text-4xl;

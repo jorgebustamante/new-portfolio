@@ -1,5 +1,10 @@
 // See https://tailwindcss.com/docs/configuration for details
 module.exports = {
+  purge: [
+    './src/**/*.mdx',
+    './src/**/*.js',
+    './src/***/**/*.js',
+  ],
   theme: {
     extend: {
       width: {

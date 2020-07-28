@@ -42,13 +42,18 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        tailwind: true,
-        purgeOnly: [`src/css/style.css`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-purgecss`,
+    //   options: {
+    //     develop: true,
+    //     tailwind: true,
+    //     // whitelistPatternsChildren: [/^markdown$/],
+    //     // whitelist: ['h1'],
+    //     ignore:[`src/css/markdown.css`, `src/css/style.css`],
+    //     // purgeOnly: [`src/css/style.css`],
+    //     content: [`${__dirname}/src/**/*.{ts,js,jsx,tsx,md,mdx}`, ]
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
