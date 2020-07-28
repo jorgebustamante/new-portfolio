@@ -55,7 +55,7 @@ const ArtPage = () => {
                 key={Item.node.frontmatter.title}
               >
                 <div className="flex flex-col lg:flex-row overflow-hidden">
-                  <div className="w-2/3">
+                  <div className="lg:w-2/3">
                     <PreviewCompatibleImage
                       imageInfo={{
                         image: Item.node.frontmatter.featuredImage,

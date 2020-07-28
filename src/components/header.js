@@ -2,10 +2,17 @@ import { Link } from "gatsby";
 import React, { useState } from "react";
 // import { HamburgerSqueeze } from "react-animated-burgers";
 // import Hamburger from "./hamburger";
-import Hamburger from 'hamburger-react'
+import Hamburger from "hamburger-react";
 import "../css/style.css";
 const Header = () => {
   const [isActive, toggleButton] = useState(false);
+  const LinkArr = [
+    { title: "Home", route: "/" },
+    { title: "My Work", route: "/#Cases" },
+    { title: "Projects", route: "/projects" },
+    { title: "Art", route: "/art" },
+    { title: "About Me", route: "/about" },
+  ];
 
   return (
     <>
@@ -19,23 +26,16 @@ const Header = () => {
             </Link>
           </div>
           <div className="block md:hidden flex rounded-none">
-            <div className='z-20'>
-            <Hamburger 
-             toggle={() => toggleButton(!isActive)}
-             toggled={isActive}
-             />
+            <div className="z-20">
+              <Hamburger
+                toggle={() => toggleButton(!isActive)}
+                toggled={isActive}
+              />
             </div>
-            
           </div>
 
           <div className="hidden md:flex flex-col md:flex-row md:items-center md:justify-center text-lg w-full md:w-auto mr-0">
-            {[
-              { title: "Home", route: "/" },
-              { title: "My Work", route: "/#Cases" },
-              { title: "Projects", route: "/projects" },
-              { title: "Art", route: "/art" },
-              { title: "About Me", route: "/about" },
-            ].map((navigationItem) => (
+            {LinkArr.map((navigationItem) => (
               <Link
                 activeClassName="font-bold border-b-2 border-red-600"
                 className="mt-3 md:mt-0 md:ml-6 text-red-700 opensans"
@@ -57,13 +57,7 @@ const Header = () => {
         id="SideMenu"
       >
         <div className="flex flex-col mt-16">
-          {[
-            { title: "Home", route: "/" },
-            { title: "My Work", route: "/#Cases" },
-            { title: "Projects", route: "/#Projects" },
-            { title: "Art", route: "/art" },
-            { title: "About Me", route: "/about" },
-          ].map((navigationItem) => (
+          {LinkArr.map((navigationItem) => (
             <div
               className="mt-3 md:mt-0 md:ml-6"
               key={navigationItem.title + "side"}

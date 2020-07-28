@@ -7,7 +7,7 @@ const Profile = () => {
     query {
       file(relativePath: { eq: "avatar.png" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 600, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -16,7 +16,7 @@ const Profile = () => {
   `);
   return (
     <Img
-      className="lg:w-1/2 w-full rounded-lg"
+      className="md:w-5/7 lg:w-1/2 w-full rounded-lg"
       fluid={data.file.childImageSharp.fluid}
       alt="paulie face"
       placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}

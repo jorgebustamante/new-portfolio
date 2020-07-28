@@ -75,10 +75,9 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `josefin sans`,
+          `josefin sans\:300,400,500,600,700`,
           `yeseva one`,
-          `vollkorn\:600i, 700i, 800i, 900i,`,
-        ],
+                ],
         display: "swap",
       },
     },
