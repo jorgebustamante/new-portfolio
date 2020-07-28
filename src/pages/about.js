@@ -38,6 +38,7 @@ const AboutPage = () => {
                       fluid={data.vasquez.childImageSharp.fluid}
                       alt="paulie at vasquez rocks"
                       className="rounded-lg"
+                      placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
                     />
                     <p className="absolute font-bold text-xl text-white top-0 mx-4">
                       <span className="low-light-red josefin text-shadow">
@@ -87,6 +88,7 @@ const AboutPage = () => {
                       fluid={data.young.childImageSharp.fluid}
                       alt="paulie when younger"
                       className="rounded-lg"
+                      placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
                     />
                     <p className="absolute font-bold text-xl text-white top-0 mx-4">
                       <span className="low-light-red josefin text-shadow">
@@ -103,6 +105,7 @@ const AboutPage = () => {
                       fluid={data.bartend.childImageSharp.fluid}
                       alt="paulie bartending"
                       className="rounded-lg"
+                      placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
                     />
                     <p className="absolute font-bold text-xl text-white top-0 mx-4">
                       <span className="low-light-red josefin text-shadow">

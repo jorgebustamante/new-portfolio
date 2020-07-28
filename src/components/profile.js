@@ -8,7 +8,7 @@ const Profile = () => {
       file(relativePath: { eq: "avatar.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

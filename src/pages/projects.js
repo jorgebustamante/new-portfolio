@@ -72,6 +72,7 @@ const Projects = () => {
                     className="lg:w-2/3 w-full rounded-lg"
                     fluid={Item.Image}
                     alt="screencap"
+                    placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
                   />
                   <div className="lg:w-1/3 w-full py-4 lg:pl-4 flex flex-col justify-around">
                     <h1 className="text-blue-900 font-semibold text-3xl xl:text-4xl yeseva">
