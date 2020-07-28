@@ -7,14 +7,15 @@
     @apply font-bold;
     font-family: "yeseva one", Cambria, Cochin, Georgia, Times,
       "Times New Roman", serif;
-    @apply mx-4;
+    /* @apply mx-4; */
   }
   & h2 {
-    @apply text-2xl;
+    @apply text-3xl;
     @apply italic;
     @apply font-bold;
     font-family: "yeseva one", Cambria, Cochin, Georgia, Times,
       "Times New Roman", serif;
+    /* @apply mx-4; */
   }
   & h3 {
     @apply text-xl;
@@ -37,17 +38,34 @@
     @apply font-bold;
   }
   & img {
-    @apply rounded;
+    @apply rounded-sm;
   }
   & p {
     @apply pt-4;
-    @apply mx-4;
+    /* @apply mx-4; */
     font-family: "josefin sans", Arial, Helvetica, sans-serif;
   }
   & ul {
     @apply list-disc;
     @apply ml-12;
   }
+  & pre {
+    /* @apply mx-4; */
+    @apply text-green-600;
+  }
+  @screen lg {
+    & .ARTICLEROW:nth-child(odd) {
+      @apply flex-row-reverse;
+    }
+    & .ARTICLEROW:nth-child(even) {
+      @apply flex-row;
+    }
+  }
 }
+/* .ARTICLEROW{
+  & .gatsby-image-wrapper{
+    @apply mx-4;
+  }
+} */
 
 /* purgecss end ignore */

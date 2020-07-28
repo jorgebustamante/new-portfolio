@@ -13,11 +13,19 @@
 body {
   overflow-x: hidden;
 }
-.gradient {
-  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+.miroodle {
+  bottom: 3em;
 }
 .low-light-red {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, #f56565 40%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #f56565 60%);
+  padding-right: 15px;
+}
+.low-light-blue {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #3BC6FF 60%);
+  padding-right: 15px;
+}
+.low-light-yellow {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #FEC33E 60%);
   padding-right: 15px;
 }
 .josefin {

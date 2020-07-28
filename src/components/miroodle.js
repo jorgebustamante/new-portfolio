@@ -2,10 +2,10 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-const Profile = () => {
+const Miroodle = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "avatar.png" }) {
+      file(relativePath: { eq: "miroodle2.png" }) {
         childImageSharp {
           fluid(maxWidth: 600, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -16,12 +16,12 @@ const Profile = () => {
   `);
   return (
     <Img
-      className="max-w-2xl lg:w-1/2 w-full rounded-lg"
+      className="max-w-3xl rounded-lg fixed miroodle"
       fluid={data.file.childImageSharp.fluid}
-      alt="paulie face"
+      alt="drawing of plant wrapping around website"
       placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
     />
   );
 };
 
-export default Profile;
+export default Miroodle;

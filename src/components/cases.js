@@ -40,7 +40,7 @@ const Cases = () => {
   return (
     <main className="pt-4 border-t-2 border-gray-600" id="Cases">
       <div className="">
-        <h1 className="text-4xl xl:text-5xl text-gray-800 josefin">My Work:</h1>
+        <h1 className="text-4xl xl:text-5xl text-blue-900 josefin">My Work:</h1>
 
         <div className="flex flex-col">
           {cases.map((Item) => (

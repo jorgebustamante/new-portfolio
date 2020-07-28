@@ -3,11 +3,9 @@ import PropTypes from "prop-types";
 
 const Row = ({children}) => {
   return (
-    <div className="w-full py-8 ARTICLEROW" >
-      <div className="flex lg:flex-row flex-col overflow-hidden">
+      <div className="flex flex-col overflow-hidden ARTICLEROW w-full py-8">
         {children}
       </div>
-    </div>
   );
 };
 

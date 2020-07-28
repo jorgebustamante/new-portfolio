@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Wrapper = ({ children }) => {
-  return <div className="lg:w-1/2 w-full flex flex-col overflow-hidden">{children}</div>;
+  return <div className="max-w-3xl w-full flex flex-col overflow-hidden justify-around mx-auto px-3">{children}</div>;
 };
 
 Wrapper.propTypes = {

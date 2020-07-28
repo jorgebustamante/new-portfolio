@@ -82,7 +82,7 @@
     "gatsby-plugin-eslint": "2.0.8",
     "npm-check": "^5.9.2",
     "prettier": "1.19.1",
-    "tailwindcss": "^1.4.6",
+    "tailwindcss": "^1.6.0",
     "webpack-bundle-analyzer": "^3.8.0"
   }
 }

@@ -5,10 +5,7 @@ import {IoIosMail} from 'react-icons/io'
 const Footer = () => {
   return (
     <footer className='bg-white'>
-      <div className='w-full py-8 flex flex-col text-center'>
-        <p className='mx-auto josefin text-lg text-gray-700'>I built this website with React/Gatsby.js, TailwindCSS, PostCSS, MDX.js, react-spring and deploy via netlify.</p>
-        <p className='mx-auto josefin text-lg text-gray-700'>Don&apos;t you know I love that JAMstack?</p>
-      </div>
+     
       <nav className='flex justify-between max-w-6xl mx-auto py-4 md:py-8 text-4xl md:text-6xl text-red-500'>
         <a
           href='https://www.linkedin.com/in/paulie-rodriguez/'
@@ -45,6 +42,10 @@ const Footer = () => {
           <FaTwitter />
         </a>
       </nav>
+      <div className='w-full py-8 flex flex-col text-center'>
+        <p className='mx-auto josefin text-lg text-gray-700'>I built this website with React/Gatsby.js, TailwindCSS, PostCSS, MDX.js, react-spring and deploy via netlify.</p>
+        <p className='mx-auto josefin text-lg text-gray-700'>Don&apos;t you know I love that JAMstack?</p>
+      </div>
 
     </footer>
   );
