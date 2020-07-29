@@ -1,5 +1,7 @@
 @font-face {
-    font-family: Air;
-    src: url("air.otf") format("otf"), url("air.otf") format("otf");
-    font-display: swap;
+    font-family: 'Air';
+    src: url('AirExtraBoldItalic.eot'); /* IE9+ Compat Modes */
+    src: url('AirExtraBoldItalic.woff2') format('woff2'), /* Super modern browsers */
+         url('AirExtraBoldItalic.woff') format('woff'), /* Modern browsers */
+         url('AirExtraBoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
   }
