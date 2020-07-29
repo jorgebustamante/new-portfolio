@@ -1,6 +1,5 @@
 /* purgecss start ignore */
 @import url("./markdown.css");
-/* @import url("../fonts/fonts.css"); */
 @tailwind base;
 @tailwind components;
 #SideMenu {

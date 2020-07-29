@@ -71,13 +71,13 @@ module.exports = {
         path: `${__dirname}/src/case-studies/images/`,
       },
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "fonts",
-        path: `${__dirname}/src/fonts/`
-      }
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "fonts",
+    //     path: `${__dirname}/src/fonts/`
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
