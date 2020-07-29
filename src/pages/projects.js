@@ -33,8 +33,8 @@ const Projects = () => {
       Title: "Cholo Name Generator",
       Description:
         "A cholo name generator in vanilla JS, names sourced from Homies LLC.",
-      Deploy: "https://jorgebustamante.github.io/cholo-name-generator/",
-      Repo: "https://github.com/jorgebustamante/cholo-name-generator",
+      Deploy: "https://paulie-rodriguez.github.io/cholo-name-generator/",
+      Repo: "https://github.com/paulie-rodriguez/cholo-name-generator",
       Image: data.cholo.childImageSharp.fluid,
       Tags: "Design, Development",
       Date: "2019",
@@ -44,7 +44,7 @@ const Projects = () => {
       Description:
         "An image gallery built with React + Gatsby, featuring archived Kodachrome slides, inspired by swiss design style",
       Deploy: "https://kodachrome-gallery.netlify.app/",
-      Repo: "https://jorgebustamante.github.io/swiss-ui",
+      Repo: "https://paulie-rodriguez.github.io/swiss-ui",
       Image: data.kodachrome.childImageSharp.fluid,
       Tags: "Design, Development",
       Date: "2019",
