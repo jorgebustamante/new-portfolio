@@ -2,7 +2,6 @@ import React from "react";
 import SEO from "../../components/seo";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import PreviewCompatibleImage from "../../components/previewCompatibleImage.js";
-// import { useSpring, animated } from "react-spring";
 import "../../css/style.css";
 import Layout from "../../components/layout";
 
@@ -48,7 +47,7 @@ const ArtPage = () => {
           <h1 className="text-4xl xl:text-5xl text-blue-900 font-semibold josefin">
             My Art:
           </h1>
-          <p className='josefin text-lg text-blue-900'>Here you&apos;ll find a selection of my personal art.</p>
+          <p className='josefin text-lg md:text-xl md:w-2/3 text-blue-900'>Here you&apos;ll find a selection of my personal art.</p>
           </div>
 
           <div className="flex flex-col">
@@ -58,7 +57,7 @@ const ArtPage = () => {
                 key={Item.node.frontmatter.title}
               >
                 <div className="flex flex-col lg:flex-row overflow-hidden">
-                  <div className="lg:w-2/3">
+                  <div className="lg:w-1/2">
                     <PreviewCompatibleImage
                       imageInfo={{
                         image: Item.node.frontmatter.featuredImage,
@@ -67,16 +66,18 @@ const ArtPage = () => {
                     />
                   </div>
 
-                  <div className="lg:w-1/3 w-full py-4 lg:pl-4 flex flex-col justify-around">
+                  <div className="lg:w-1/2 w-full py-4 lg:pl-4 flex flex-col justify-between">
+                    <div>
                     <h1 className="text-blue-900 font-semibold text-3xl xl:text-4xl yeseva">
                       {Item.node.frontmatter.title}{" "}
                     </h1>
-                    <div className="text-blue-800 text-base xl:text-lg leading-relaxed josefin">
+                    <p className="text-blue-800 text-lg md:text-xl leading-relaxed josefin">
                       {Item.node.frontmatter.description}
+                    </p>
                     </div>
                     <div className="my-4 flex flex-col">
                       <Link
-                        className="text-blue-500 font-bold hover:underline"
+                        className="text-blue-500 font-bold hover:underline josefin text-lg"
                         to={Item.node.fields.slug}
                       >
                         View Work ➔

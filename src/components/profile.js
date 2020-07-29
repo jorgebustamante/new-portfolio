@@ -16,7 +16,7 @@ const Profile = () => {
   `);
   return (
     <Img
-      className="max-w-2xl lg:w-1/2 w-full rounded-lg"
+      className="max-w-2xl lg:w-1/2 w-full rounded-sm"
       fluid={data.file.childImageSharp.fluid}
       alt="paulie face"
       placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}

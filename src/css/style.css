@@ -1,5 +1,6 @@
 /* purgecss start ignore */
 @import url("./markdown.css");
+@import url("../fonts/fonts.css");
 @tailwind base;
 @tailwind components;
 #SideMenu {
@@ -14,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 .miroodle {
-  bottom: 3em;
+  bottom: 4em;
 }
 .low-light-red {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #f56565 60%);
@@ -29,10 +30,10 @@ body {
   padding-right: 15px;
 }
 .josefin {
-  font-family: "josefin sans", Arial, Helvetica, sans-serif;
+  font-family: "karla", "josefin sans", Arial, Helvetica, sans-serif;
 }
 .yeseva {
-  font-family: "yeseva one", Cambria, Cochin, Georgia, Times, "Times New Roman",
+  font-family: "Air", Cambria, Cochin, Georgia, Times, "Times New Roman",
     serif;
 }
 

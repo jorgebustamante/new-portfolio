@@ -7,7 +7,7 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
 
   if (image && image.childImageSharp) {
     return (
-      <Img fluid={image.childImageSharp.fluid} alt={alt} className="rounded" placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }} />
+      <Img fluid={image.childImageSharp.fluid} alt={alt} className="rounded-sm" placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }} />
     );
   }
 

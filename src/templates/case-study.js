@@ -58,7 +58,7 @@ export const CaseStudyTemplate = ({
           <span className="highlight italic pt-1 pr-1 font-medium josefin leading-tight">{description}</span>
         </p>
         <p className="text-gray-600 volkorn">{date}</p>
-        <div className="w-full text-center rounded-md flex">
+        <div className="w-full text-center rounded-sm flex">
           {featuredImage ? (
             <div className="self-center w-full">
               <PreviewCompatibleImage

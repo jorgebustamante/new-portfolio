@@ -29,7 +29,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
         display: `minimal-ui`,
-        icon: `src/images/cowboyBlob.png`,
+        icon: `src/images/logopr.png`,
       },
     },
     {
@@ -72,10 +72,17 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "fonts",
+        path: `${__dirname}/src/fonts/`
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `josefin sans\:300,400,500,600,700`,
+          `karla\:,400,400i,700,700i`,
           `yeseva one`,
                 ],
         display: "swap",

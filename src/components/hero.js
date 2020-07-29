@@ -23,8 +23,8 @@ const Hero = () => {
   });
 
   return (
-    <div className=''>
-      <div className="lg:py-16 py-8 flex lg:flex-row flex-col yeseva font-bold italic sm:text-5xl text-4xl text-blue-900 leading-tight justify-between items-center mx-auto">
+    <div className="">
+      <div className="lg:py-16 py-8 flex lg:flex-row flex-col yeseva font-bold italic sm:text-5xl text-3xl text-blue-900 leading-tight justify-between items-center mx-auto">
         <div className="items-center">
           <div className="lg:mb-0 mb-4 flex flex-col items-start">
             {trail.map(({ ...rest }, index) => (
@@ -47,12 +47,13 @@ const Hero = () => {
         </div>
         <div className="lg:w-1/2 lg:pl-8 flex flex-col justify-around">
           <div>
-            <h2 className="text-4xl yeseva italic font-bold">
+            <h2 className="text-2xl sm:text-4xl yeseva italic font-bold leading-8">
               I&apos;m a hybrid between{" "}
-              <span className="low-light-blue">code</span> <span>and </span>
-              {/* &nbsp; */}
-              <span className="low-light-yellow">design.</span> <br />
-              What can I say? I like the visual side of things!
+              <span className="low-light-blue">code</span><span> &amp; </span>
+              <span className="low-light-yellow">design.</span>
+              <p className="text-2xl sm:text-4xl yeseva italic font-bold leading-8">
+                What can I say? I like the visual side of things!
+              </p>
             </h2>
           </div>
           <div className="inline-flex pt-4 ">
@@ -67,7 +68,7 @@ const Hero = () => {
             >
               <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </svg>
-            <p className="josefin text-2xl pl-2">
+            <p className="josefin text-lg sm:text-2xl pl-2">
               You can find a selection of my work below!{" "}
             </p>
           </div>

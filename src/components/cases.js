@@ -40,7 +40,7 @@ const Cases = () => {
   return (
     <main className="pt-4 border-t-2 border-blue-800" id="Cases">
       <div className="">
-        <h1 className="text-4xl xl:text-5xl text-blue-900 josefin">My Work:</h1>
+        <h1 className="text-4xl xl:text-5xl text-blue-900 josefin font-bold">My Work:</h1>
 
         <div className="flex flex-col">
           {cases.map((Item) => (
@@ -59,15 +59,17 @@ const Cases = () => {
                 </div>
 
                 <div className="lg:w-1/2 w-full py-4 lg:py-0 lg:pl-4 flex flex-col justify-around">
+                  <div>
                   <h1 className="text-blue-900 font-semibold text-3xl xl:text-4xl yeseva">
                     {Item.node.frontmatter.title}{" "}
                   </h1>
-                  <div className="text-blue-800 text-base xl:text-lg leading-relaxed josefin">
+                  <p className="text-blue-800 text-lg md:text-xl leading-relaxed josefin">
                     {Item.node.frontmatter.description}
+                  </p>
                   </div>
                   <div className="my-4 flex flex-col">
                     <Link
-                      className="text-blue-500 font-bold hover:underline"
+                      className="text-blue-500 font-bold hover:underline josefin text-lg font-bold"
                       to={Item.node.fields.slug}
                     >
                       View Work ➔
@@ -75,7 +77,7 @@ const Cases = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row justify-between josefin text-base font-medium text-blue-800 pt-2">
+              <div className="flex flex-col sm:flex-row justify-between josefin text-base text-blue-800 pt-2">
                 <p id="date">{Item.node.frontmatter.date}</p>
                 <div className="flex flex-row ">
                   {Item.node.frontmatter.tags.map((tag) => (

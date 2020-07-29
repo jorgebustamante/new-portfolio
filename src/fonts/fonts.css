@@ -1,0 +1,5 @@
+@font-face {
+    font-family: Air;
+    src: url("air.otf") format("otf"), url("air.otf") format("otf");
+    font-display: swap;
+  }

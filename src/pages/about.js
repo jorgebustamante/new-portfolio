@@ -29,7 +29,7 @@ const AboutPage = () => {
         <div className="py-4">
           <section className="flex flex-col items-center bg-white">
             <div className="">
-              <h1 className="mb-3 text-5xl text-blue-900 josefin font-semibold border-b-2 border-blue-800">About Me:</h1>
+              <h1 className="mb-3 text-5xl text-blue-900 josefin font-bold border-b-2 border-blue-800">About Me:</h1>
 
               <div className="mb-6 text-blue-900 text-base w-full">
                 <div className="flex lg:flex-row flex-col py-4 justify-between border-b-2 border-blue-800">
@@ -37,7 +37,7 @@ const AboutPage = () => {
                     <Img
                       fluid={data.vasquez.childImageSharp.fluid}
                       alt="paulie at vasquez rocks"
-                      className="rounded-lg"
+                      className="rounded-sm"
                       placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
                     />
                     <p className="absolute font-semibold text-xl text-white top-0 mx-4">
@@ -87,7 +87,7 @@ const AboutPage = () => {
                     <Img
                       fluid={data.young.childImageSharp.fluid}
                       alt="paulie when younger"
-                      className="rounded-lg"
+                      className="rounded-sm"
                       placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
                     />
                     <p className="absolute font-semibold text-xl text-white top-0 mx-4">
@@ -104,7 +104,7 @@ const AboutPage = () => {
                     <Img
                       fluid={data.bartend.childImageSharp.fluid}
                       alt="paulie bartending"
-                      className="rounded-lg"
+                      className="rounded-sm"
                       placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
                     />
                     <p className="absolute font-semibold text-xl text-white top-0 mx-4">

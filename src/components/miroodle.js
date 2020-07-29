@@ -16,7 +16,7 @@ const Miroodle = () => {
   `);
   return (
     <Img
-      className="max-w-3xl rounded-lg fixed miroodle"
+      className="max-w-3xl fixed miroodle"
       fluid={data.file.childImageSharp.fluid}
       alt="drawing of plant wrapping around website"
       placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
