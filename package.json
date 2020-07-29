@@ -23,6 +23,7 @@
     "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-mdx": "^1.2.29",
     "gatsby-plugin-postcss": "^2.3.11",
+    "gatsby-plugin-preload-fonts": "^1.2.19",
     "gatsby-plugin-purgecss": "4.0.1",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.6.22",
@@ -53,6 +54,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "preload-fonts": "gatsby-preload-fonts",
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different \"**/*.{css,js,jsx,json,md}\"",
     "analyze": "npm run analyze:lint && npm run analyze:prettier",

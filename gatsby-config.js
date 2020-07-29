@@ -83,20 +83,20 @@ module.exports = {
       options: {
         fonts: [
           `karla\:,400,400i,700,700i`,
-          `yeseva one`,
                 ],
         display: "swap",
       },
     },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-          families: "Air",
-          urls: ["/fonts/fonts.css"],
-        },
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-web-font-loader",
+    //   options: {
+    //     custom: {
+    //       families: "Air",
+    //       urls: ["/fonts/fonts.css"],
+    //     },
+    //   },
+    // },
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: "gatsby-plugin-firebase",  
       options: {         
