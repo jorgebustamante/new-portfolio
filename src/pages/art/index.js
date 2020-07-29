@@ -42,16 +42,19 @@ const ArtPage = () => {
   return (
     <Layout>
       <SEO />
-      <main className="pt-4 border-t-2 border-gray-600" id="Art">
+      <main className="pt-4 " id="Art">
         <div className="">
-          <h1 className="text-4xl xl:text-5xl text-gray-800 josefin">
+          <div className='border-b-2 border-blue-800'>
+          <h1 className="text-4xl xl:text-5xl text-blue-900 font-semibold josefin">
             My Art:
           </h1>
+          <p className='josefin text-lg text-blue-900'>Here you&apos;ll find a selection of my personal art.</p>
+          </div>
 
           <div className="flex flex-col">
             {cases.map((Item) => (
               <div
-                className="w-full py-8 border-b-2 border-gray-600"
+                className="w-full py-8 border-b-2 border-blue-800"
                 key={Item.node.frontmatter.title}
               >
                 <div className="flex flex-col lg:flex-row overflow-hidden">
@@ -68,7 +71,7 @@ const ArtPage = () => {
                     <h1 className="text-blue-900 font-semibold text-3xl xl:text-4xl yeseva">
                       {Item.node.frontmatter.title}{" "}
                     </h1>
-                    <div className="text-gray-700 text-base xl:text-lg leading-relaxed josefin">
+                    <div className="text-blue-800 text-base xl:text-lg leading-relaxed josefin">
                       {Item.node.frontmatter.description}
                     </div>
                     <div className="my-4 flex flex-col">
@@ -81,7 +84,7 @@ const ArtPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-row justify-between josefin text-base font-bold text-gray-600 pt-2">
+                <div className="flex flex-row justify-between josefin text-base font-medium text-blue-800 pt-2">
                   <p id="date">{Item.node.frontmatter.date}</p>
                 </div>
               </div>

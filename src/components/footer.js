@@ -43,8 +43,8 @@ const Footer = () => {
         </a>
       </nav>
       <div className='w-full py-8 flex flex-col text-center'>
-        <p className='mx-auto josefin text-lg text-gray-700'>I built this website with React/Gatsby.js, TailwindCSS, PostCSS, MDX.js, react-spring and deploy via netlify.</p>
-        <p className='mx-auto josefin text-lg text-gray-700'>Don&apos;t you know I love that JAMstack?</p>
+        <p className='mx-auto josefin text-lg text-blue-800'>I built this website with React/Gatsby.js, TailwindCSS, PostCSS, MDX.js, react-spring and deploy via netlify.</p>
+        <p className='mx-auto josefin text-lg text-blue-800'>Don&apos;t you know I love that JAMstack?</p>
       </div>
 
     </footer>

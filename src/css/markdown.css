@@ -48,6 +48,7 @@
   & ul {
     @apply list-disc;
     @apply ml-12;
+    font-family: "josefin sans", Arial, Helvetica, sans-serif;
   }
   & pre {
     /* @apply mx-4; */

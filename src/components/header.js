@@ -42,7 +42,7 @@ const Header = () => {
                 key={navigationItem.title}
                 to={navigationItem.route}
               >
-                <p className="block text-gray-900 josefin">
+                <p className="block text-blue-900 josefin">
                   {navigationItem.title}
                 </p>
               </Link>

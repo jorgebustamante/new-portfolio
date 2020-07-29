@@ -55,16 +55,16 @@ const Projects = () => {
       <SEO/>
       <main className="pt-4" id="Projects">
         <div>
-          <div className='border-b-2 border-gray-600'>
-          <h1 className="text-4xl xl:text-5xl text-gray-800 josefin">
+          <div className='border-b-2 border-blue-800'>
+          <h1 className="text-4xl xl:text-5xl text-blue-900 josefin font-semibold">
             My Projects:
           </h1>
-          <h2 className='josefin text-lg md:w-1/2 text-gray-800'>Here you&apos;ll find a variety of my work ranging from open source contributions, small side work, or web dev projects for fun.</h2>
+          <h2 className='josefin text-lg md:w-1/2 text-blue-900'>Here you&apos;ll find a variety of my work ranging from open source contributions, small side work, or web dev projects for fun.</h2>
           </div>
           <div className="flex flex-col">
             {ProjectsArr.map((Item) => (
               <div
-                className="w-full py-8 border-b-2 border-gray-600"
+                className="w-full py-8 border-b-2 border-blue-800"
                 key={Item.Title}
               >
                 <div className="flex flex-col lg:flex-row overflow-hidden">
@@ -78,7 +78,7 @@ const Projects = () => {
                     <h1 className="text-blue-900 font-semibold text-3xl xl:text-4xl yeseva">
                       {Item.Title}{" "}
                     </h1>
-                    <div className="text-gray-700 text-base xl:text-lg leading-relaxed josefin">
+                    <div className="text-blue-800 text-base xl:text-lg leading-relaxed josefin">
                       {Item.Description}
                     </div>
                     <div className="my-4 flex flex-col">
@@ -105,7 +105,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-row justify-between josefin text-base font-bold text-gray-600 pt-2">
+                <div className="flex flex-row justify-between josefin text-base font-medium text-blue-800 pt-2">
                   <p id="tags" className="">
                     {Item.Tags}
                   </p>

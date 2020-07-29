@@ -54,7 +54,7 @@ export const ArtCaseTemplate = ({
           {title}
         </h1>
         <p className="lg:text-4xl text-2xl">
-          <span className="josefin italic pt-1 pr-1">{description}</span>
+        <span className="highlight italic pt-1 pr-1 font-medium josefin leading-tight">{description}</span>
         </p>
         <p className="text-gray-600 volkorn">{date}</p>
         <div className="w-full text-center rounded-md flex">

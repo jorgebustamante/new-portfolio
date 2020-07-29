@@ -21,7 +21,7 @@ const AboutPage = () => {
   `);
   return (
     <Layout>
-      <div className="flex flex-col font-sans min-h-screen text-gray-800 bg-white mt-1">
+      <div className="flex flex-col font-sans min-h-screen text-blue-900 bg-white mt-1">
         <SEO
           keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
           title="About Paulie"
@@ -29,10 +29,10 @@ const AboutPage = () => {
         <div className="py-4">
           <section className="flex flex-col items-center bg-white">
             <div className="">
-              <h1 className="mb-3 text-5xl text-gray-800 josefin">About Me:</h1>
+              <h1 className="mb-3 text-5xl text-blue-900 josefin font-semibold border-b-2 border-blue-800">About Me:</h1>
 
-              <div className="mb-6 text-gray-800 text-lg w-full">
-                <div className="flex lg:flex-row flex-col py-4 justify-between border-b-2 border-gray-800">
+              <div className="mb-6 text-blue-900 text-base w-full">
+                <div className="flex lg:flex-row flex-col py-4 justify-between border-b-2 border-blue-800">
                   <div className="lg:w-1/2 relative">
                     <Img
                       fluid={data.vasquez.childImageSharp.fluid}
@@ -40,7 +40,7 @@ const AboutPage = () => {
                       className="rounded-lg"
                       placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
                     />
-                    <p className="absolute font-bold text-xl text-white top-0 mx-4">
+                    <p className="absolute font-semibold text-xl text-white top-0 mx-4">
                       <span className="low-light-red josefin text-shadow">
                         Vasquez Rocks Agua Dulce 2018, Ricoh GXR100
                       </span>
@@ -62,7 +62,7 @@ const AboutPage = () => {
                   </div>
                 </div>
 
-                <div className="flex lg:flex-row flex-col-reverse py-4 align-middle border-b-2 border-gray-800">
+                <div className="flex lg:flex-row flex-col-reverse py-4 align-middle border-b-2 border-blue-800">
                   <div className="flex-col lg:w-1/2 lg:mr-12">
                     <p className="yeseva lg:text-5xl text-4xl text-blue-900 pb-4">
                       Vagabond Artist
@@ -90,7 +90,7 @@ const AboutPage = () => {
                       className="rounded-lg"
                       placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
                     />
-                    <p className="absolute font-bold text-xl text-white top-0 mx-4">
+                    <p className="absolute font-semibold text-xl text-white top-0 mx-4">
                       <span className="low-light-red josefin text-shadow">
                         {" "}
                         Kinwav studio Seattle 2016, Sony A7II
@@ -99,7 +99,7 @@ const AboutPage = () => {
                   </div>
                 </div>
 
-                <div className="lg:flex-row flex-col flex py-4 border-b-2 border-gray-800">
+                <div className="lg:flex-row flex-col flex py-4 border-b-2 border-blue-800">
                   <div className="w-full md:w-1/2 relative">
                     <Img
                       fluid={data.bartend.childImageSharp.fluid}
@@ -107,7 +107,7 @@ const AboutPage = () => {
                       className="rounded-lg"
                       placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
                     />
-                    <p className="absolute font-bold text-xl text-white top-0 mx-4">
+                    <p className="absolute font-semibold text-xl text-white top-0 mx-4">
                       <span className="low-light-red josefin text-shadow">
                         Bar Ciudad Seattle 2019, iPhone SE
                       </span>
