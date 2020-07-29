@@ -89,6 +89,15 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: "Air",
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-firebase",  
       options: {         
        features: {          

@@ -47,11 +47,11 @@ const Hero = () => {
         </div>
         <div className="lg:w-1/2 lg:pl-8 flex flex-col justify-around">
           <div>
-            <h2 className="text-2xl sm:text-4xl yeseva italic font-bold leading-8">
+            <h2 className="text-2xl sm:text-4xl yeseva italic font-bold md:leading-tight leading-8">
               I&apos;m a hybrid between{" "}
               <span className="low-light-blue">code</span><span> &amp; </span>
               <span className="low-light-yellow">design.</span>
-              <p className="text-2xl sm:text-4xl yeseva italic font-bold leading-8">
+              <p className="text-2xl sm:text-4xl yeseva italic font-bold md:leading-tight leading-8">
                 What can I say? I like the visual side of things!
               </p>
             </h2>
