@@ -122,5 +122,7 @@ module.exports = {
           //only set this to true in local builds, not deployment prod builds
           production: false,
         },
-      },  ],
+      },
+      'gatsby-plugin-remove-serviceworker'
+  ],
 };

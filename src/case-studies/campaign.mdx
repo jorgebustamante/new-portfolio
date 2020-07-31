@@ -12,33 +12,58 @@ tags:
 - Branding
 ---
 # Overview   
-Small business owners come from economically disadvantaged economic backgrounds, often don’t have generational wealth. Many come from non technical backgrounds and their businesses are lagging behind in the past as they fail to adapt to digital presence and the online economy. Covid-19 has amplified the economic despair of these business owners. Business owners need curated resources and guides in adapting their business and increasing their digital presence.
+Small business owners come from economically disadvantaged economic backgrounds, often don’t have generational wealth. Many come from non technical backgrounds and their businesses are lagging behind in the past as they fail to adapt to digital presence and the online economy. Covid-19 has amplified the economic despair of these business owners. Volumen Digital seeks to provide curated resources and guides in adapting their business and increasing their digital presence.
 
 # Problems   
-- These business owners don’t have high technical literacy
-- Small Business owners don’t have the funds to pay for a company to take on these issues
+- These business owners often don’t have high technical literacy
+- Small Business owners often don’t have the funds to pay for a company to take on these issues
 - Small Business owners are often unaware of the benefits of maintaining a digital presence
 
 **How might we empower these business owners effectively and help them improve their digital presence?**
 
-# Target Audience / Research   
-- SMB owners, 30-50 years old, multicultural
+# Research 
+## Target Audience  
+- Small business owners, 30-50 years old, multicultural
 - Active community members
 - Family of SMB owners
 - Non profit community oriented organizations
 
-## Needs   
-- SMB owners need marketing empowerment to gain online sales and exposure
-- SMB owners need access to all local support in their area
-- SMB owners need creative guides in their native language
+## User Needs   
+- Small business owners need marketing empowerment to gain online sales and exposure
+- Small business owners need access to all local support in their area
+- Small business owners need creative guides in their native language to support them
 
-## Goals   
+## Campaign Goals   
 - Increase exposure and audience of these businesses
-- Develop brand
+- Develop a brand reputation of assisting small businesses
 - Gain an audience
+# Design Process   
+## Making an Inclusive Brand   
+The utmost importance expressed in stakeholder meetings was to have as inclusive of a brand personality as possible. Many resources online available to businesses are excessively high jargon, overly professional in appearance, and feel unrelatable to many small business owners.   
+I chose to go with a more colorful approach in the landing page, something to express a more casual and human like environment. For supporting media, I invested heavily in utilizing graphics from Pablo Stanley's illustration libraries; Open Doodles and Open Peeps.   
+Pablo's work in these open source illustration libraries are rounded, expressive, and a modern take on Chibi styles. I saw these as a great opportunity to use for supporting media both for their visual value, but also because of the increased ease of access for stakeholders to create additional supporting media for content within the campaign.
+## Article Design
+The CMS for creating content on the site had to be as accessible as possible to stakeholders. For that reason the text editor is essentially a rich text editor that can make edits to font weight and add inline images. 
+Within those limitations I designed an article like approach inspired by Indianapolis Monthly. I examined leaders in onlne publications such as NyTimes, Medium, Vox, and thought carefully about what would be the best design approach within the campaign. 
+I chose an approach of rounded media that is not overly dominating and alternately floats different directions within the article content.
+## Social Media Sharing
+
+# Development Process   
+## Performance
+User retention is important, and design aside Volumen Digital needed a high performance and seamless web presence. I went with Gatsby.js, both for Gatsby's high performance and fast load times as a static site generator, but also becuase of Gatsby's use of supporting React natively and ensuring that finding developers in the future to be as easy as possible. 
+Gatsby allows for features such as progressive media loading, Preloading pages with Gatsby's Link API allowing for seamless site navigation, and built in image optimization through the Image Sharp library.   
+## CSS   
+I chose TailwindCSS for the CSS framework. Tailwind offers a CSS framework of utility based CSS classes with easy to understand classnames. This choice was largely done because unlike CSS frameworks like Bootstrap, Bulma, Material-- Tailwind does not have CSS shortcuts for visual components such as Cards, Columns or Rows. This allows for a CSS experience that does not involve learning actual architecture of CSS classes within frameworks, and Tailwind focuses more on inline styles to have heavily localized styling. Tailwind is lower level styling than other frameworks and rather than expecting a developer to being proficient at Tailwind, one only needs to be proficient in CSS to make full use of Tailwind.
+Tailwind additionally pairs well with it's built in purge tool, and libraries like PurgeCSS. Stripping unused styles from the bundle and making the client side browser only download what's used, rather than a whole CSS library.
+## CMS and Hosting   
+Seeing how involved stakeholders intend to be within the longevity of the campaign, one expects frequent content updates. While I view Contentful CMS as the best option for accessible CMS editors, I chose to take the approach of building a custom Netlify CMS editor with live preview. This localizes the technical investments more to one platform, in that stakeholders may view deploy logs, analytics, and create content all on one web platform.
+Netlify CMS acts differently than most CMSs, in that rather than Netlify's CMS hosting a database of CMS content, it instead commits CMS generated content to the git repository of the web app as markdown content, Netlify's continuous deployment then rebuilds the static site on new commits to the git repo. 
+Netlify CMS involved a lot more code labor than other CMS solutions, but I see this decision as the best approach to give stakeholders as much accessibility within the product as possible.
+
+
 
 # Solution   
-The solution is an article based platform that provides resources/guides. Inclusive branding and low jargon to help SMBs feel they belong and can emulate brands.
+The solution is an article based platform that provides resources/guides. Inclusive branding and accessible jargon to help small business owners feel they belong and can adapt their brands.
 
 # Learnings   
 - How one can make an inclusive online space

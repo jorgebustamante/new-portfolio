@@ -47,11 +47,11 @@ export const CaseStudyTemplate = ({
   }, {});
 
   return (
-    <section className="py-4 bg-white">
+    <section className="py-4 bg-white max-w-3xl mx-auto">
       {helmet || ""}
 
       <div className="mx-auto text-blue-900">
-        <h1 className="lg:text-6xl text-4xl italic heaviest leading-tight yeseva">
+        <h1 className="lg:text-5xl text-4xl italic heaviest leading-tight yeseva">
           {title}
         </h1>
         <p className="lg:text-4xl text-2xl">
@@ -70,7 +70,7 @@ export const CaseStudyTemplate = ({
             </div>
           ) : null}
         </div>
-        <div className="text-lg pt-4 markdown">
+        <div className="text-lg pt-4 markdown mx-auto">
         <MDXProvider components={components}>
             <MDXRenderer
               components={shortcodes}
