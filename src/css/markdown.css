@@ -7,7 +7,7 @@
     @apply font-bold;
     font-family: "Air", Georgia, Cambria, Cochin, Times,
       "Times New Roman", serif;
-    /* @apply mx-4; */
+    @apply pt-6;
   }
   & h2 {
     @apply text-2xl;
@@ -15,7 +15,7 @@
     @apply font-bold;
     font-family: "Air", Georgia, Cambria, Cochin, Times,
       "Times New Roman", serif;
-    /* @apply mx-4; */
+    @apply pt-2;
   }
   @screen sm{
     & h1{
@@ -46,16 +46,16 @@
     @apply rounded-sm;
   }
   & p {
-    @apply pt-4;
+    @apply pt-2;
     font-family: "karla", Arial, Helvetica, sans-serif;
   }
   & ul {
     @apply list-disc;
-    @apply ml-12;
+    @apply ml-8;
     font-family: "karla", Arial, Helvetica, sans-serif;
+    @apply pt-2;
   }
   & pre {
-    /* @apply mx-4; */
     @apply text-green-600;
   }
   @screen lg {
@@ -67,10 +67,6 @@
     }
   }
 }
-/* .ARTICLEROW{
-  & .gatsby-image-wrapper{
-    @apply mx-4;
-  }
-} */
+
 
 /* purgecss end ignore */

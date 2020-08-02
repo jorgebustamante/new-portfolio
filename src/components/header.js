@@ -1,7 +1,5 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
-// import { HamburgerSqueeze } from "react-animated-burgers";
-// import Hamburger from "./hamburger";
 import Hamburger from "hamburger-react";
 import "../css/style.css";
 const Header = () => {
