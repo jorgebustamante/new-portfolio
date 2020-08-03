@@ -8,6 +8,8 @@ embeddedImages:
 - ./images/campaignsketch3.jpg
 - ./images/campaignpersonas.png
 - ./images/campaignwireframe.png
+- ./images/campaignfeatures.png
+- ./images/campaignarticle.png
 
 description: Building a campaign website with resources to support small business owners.
 tags:
@@ -25,12 +27,15 @@ Small business owners come from economically disadvantaged economic backgrounds,
 
 **How might we empower these business owners effectively and help them improve their digital presence?**
 
+
 # Research 
 ## Target Audience  
 - Small business owners, 30-50 years old, multicultural
 - Active community members
 - Family of SMB owners
-- Non profit community oriented organizations
+- Non profit community oriented organizations   
+<Img fluid={props.embeddedImages.image3.fluid} />   
+
 
 ## User Needs   
 - Small business owners need marketing empowerment to gain online sales and exposure
@@ -42,15 +47,46 @@ Small business owners come from economically disadvantaged economic backgrounds,
 - Develop a brand reputation of assisting small businesses
 - Gain an audience
 # Design Process   
+
+## Hierarchy   
+<Row>
+<Wrapper>
+<Img fluid={props.embeddedImages.image1.fluid} imgStyle={{ objectFit: "contain" }}/>  
+</Wrapper>
+<Wrapper>
+<Img fluid={props.embeddedImages.image2.fluid} imgStyle={{ objectFit: "contain" }} />  
+</Wrapper> 
+</Row>  
+
+<Row>   
+<Wrapper>   
+
 ## Making an Inclusive Brand   
+
 The utmost importance expressed in stakeholder meetings was to have as inclusive of a brand personality as possible. Many resources online available to businesses are excessively high jargon, overly professional in appearance, and feel unrelatable to many small business owners.   
 I chose to go with a more colorful approach in the landing page, something to express a more casual and human like environment. For supporting media, I invested heavily in utilizing graphics from Pablo Stanley's illustration libraries; Open Doodles and Open Peeps.   
 Pablo's work in these open source illustration libraries are rounded, expressive, and a modern take on Chibi styles. I saw these as a great opportunity to use for supporting media both for their visual value, but also because of the increased ease of access for stakeholders to create additional supporting media for content within the campaign.
+</Wrapper>
+<Wrapper>
+<Img fluid={props.embeddedImages.image4.fluid} /> 
+</Wrapper>
+</Row>   
+
+
+<Row>
+<Wrapper>
+
 ## Article Design
 The CMS for creating content on the site had to be as accessible as possible to stakeholders. For that reason the text editor is essentially a rich text editor that can make edits to font weight and add inline images. 
 Within those limitations I designed an article like approach inspired by Indianapolis Monthly. I examined leaders in onlne publications such as NyTimes, Medium, Vox, and thought carefully about what would be the best design approach within the campaign. 
-I chose an approach of rounded media that is not overly dominating and alternately floats different directions within the article content.
-## Social Media Sharing
+I chose an approach of rounded media that is not overly dominating and alternately floats different directions within the article content. 
+</Wrapper>
+<Wrapper>  
+<Img fluid={props.embeddedImages.image6.fluid} />   
+</Wrapper>
+</Row>
+
+<!-- ## Social Media Sharing -->
 
 # Development Process   
 ## Performance
@@ -65,16 +101,24 @@ Netlify CMS acts differently than most CMSs, in that rather than Netlify's CMS h
 Netlify CMS involved a lot more code labor than other CMS solutions, but I see this decision as the best approach to give stakeholders as much accessibility within the product as possible.
 
 
+<Row>   
+<Wrapper>   
 
 # Solution   
-The solution is an article based platform that provides resources/guides. Inclusive branding and accessible jargon to help small business owners feel they belong and can adapt their brands.
+
+The solution is an article based platform that provides resources/guides. Inclusive branding and accessible jargon to help small business owners feel they belong and can adapt their brands. Scaling with site sections such as community directories, interactive maps serving target areas, and resources for outreach. 
+</Wrapper>
+<Wrapper>
+<Img fluid={props.embeddedImages.image5.fluid} />   
+</Wrapper>
+</Row>
 
 # Learnings   
-- How one can make an inclusive online space
-- Article based design
-- Illustration libraries
+This project was fun working on and included the biggest team I've worked with yet. I think the most unique thing I had to tackle in this was creating a brand personality that was inclusive. I often found myself back tracking and adjusting font pairings and supporting media to better suit a theme of inclusivity.   
+Making designs for articles is tough, the biggest issue is being aware of technical constraints and how as far as articles go, it is unstructured markdown content with images coming from a CMS and I can't control general formatting very well. It lead to me having to get creative with CSS properties such as nth-child for floating images alternate directions. Getting general margins looking nice within articles was an additional challenge and made me greatly appreciate those who work in print media.   
+This was my first time using illustration libraries and it was really a blast, the added value that illustrations provide is great, but the level of control that designers have in creating them and making these illustrative components work with the brand, it's a highly valuable tool and I'm enthusiastic for illustration libraries to be a bigger role in content creation in the future.
 
-
+# Summary   
 
 
 

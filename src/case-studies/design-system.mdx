@@ -1,6 +1,6 @@
 ---
 templateKey: case-study
-title: Design System  
+title: Design System and Task Flow
 date: 2020
 featuredImage: images/WhooshMail.png
 embeddedImages:
@@ -19,28 +19,112 @@ tags:
 - Design
 ---
 # Overview   
-Creating a design system for a B2B email marketing task flow that allows for 2 different level permissioned users to complete email marketing in a simplified approach.   
+As part of my Treehouse Talentpath curriculum I was assigned a project for developing a task flow for WhooshMail, a B2B email marketing web app that allows for 2 different level permissioned users to complete email marketing in a simplified approach. Within this project I focused heavily on the design system and visual accessibility within the design.
+
 
  # Problems   
 - These types of online services are often complex and hard to understand
 - Our users don’t want to double their workload and want something that instead simplifies their problems
 - Making a highly technical tool easy to access for non technical users
 - There are different features for the subscription level
-- 
+**How might we simplify this process without weakening the service?**
 
 # Target Audeince / Research   
-Reference research from project 7   
+## User Personas   
+I created 2 user personas for the different level permissioned users of the service, a Basic level user and Admin level user.   
+Based on the provided user research a summary of each respective user persona:   
+## Basic   
+- Ages 20-40
+- Work for small businesses
+- Crafters and Artists
+- Has less funds
+## Admin   
+- Ages 40-60
+- Small business and LLC owners
+- Post secondary education background
+- Uses personal funds to finance projects
+<Row>
+<Wrapper>
+<Img fluid={props.embeddedImages.image5.fluid} /> 
+</Wrapper>
+<Wrapper>
+<Img fluid={props.embeddedImages.image6.fluid} /> 
+</Wrapper>
+</Row>
 
+## Storyboarding  
+Within the storyboarding, our users have different motivations for needing the service but both have a similar goal in mind that WhooshMail can solve.   
+## Basic Story   
+Our basic user is a true victim to late stage capitalism and is coping with the cost of living sky rocketing and coming to terms with never being able to afford a home in their life. Despite this our basic user is still a passionate craftmaker that is very active in their local community, and seeks greater fulfillment with their artistic passions and achieving sales with it. Our basic user hates the social media hustle, and wants a better approach to spreading their brand and getting potential art sales. 
+Our user has limited funds and still uses their ex's Netflix account, for this reason our user looks for artists within their community who come from similar backgrounds and seek to follow similar steps.   
+Our user finds WhooshMail and is satisfied with getting the exact service they need, without having to learn a new jargon.   
+## Admin Story   
+Our Admin user owns a couple businesses and has done well for themselves in being a bootstrapped business owner that has survived multiple eras of economic turmoil in America. Despite these victories our admin user is overworked, and is extremely hands on within their businesses. Our admin seeks to take a hands off approach and look for a "Work smarter not harder" solution.   
+Our user is resentful of the hustle culture that Linkedin influencers push about entrepreneurship and Forex or bitcoin. Our user now envious that their business success has not allowed them to step back from the business seeks within their community for solutions in simplifying their workload.   
+Our user trials the admin mode and is quickly impressed with the ease of access and levels of permissions, seeing opportunity for delegating marketing tasks to managers for their businesses, allowing our user to take a step back and relax.
+<Row>
+<Wrapper>
+<Img fluid={props.embeddedImages.image7.fluid} /> 
+</Wrapper>
+<Wrapper>
+<Img fluid={props.embeddedImages.image8.fluid} /> 
+</Wrapper>
+</Row>
 
 # Design Approach   
+<Row>
+<Wrapper>   
+
+## Gallery   
+WhooshMail needs a gallery page to display email marketing templates, but within that gallery page they also want a section that can show active campaigns for admin users and tutorials for basic users. With this in mind I try a few approaches and look at other services with design templates, inspired greatly by Canva in the brainstorming process.
+</Wrapper>
+<Wrapper>
+<Img fluid={props.embeddedImages.image1.fluid} /> 
+</Wrapper>
+</Row>
+
+## Interactive Editor   
+The interactive editor for email templates has different features based on the permission level of users. Admins may have drag and drop access with tools and can change the design and content of an email campaign. While basic users may not edit the design of a campaign and may only edit content.   
+With these different permissions in mind, it was not a good approach to use the same editor design for both users. In analysis of other in-browser visual editors, I drew most inspiration from MailChimp, Canva, and Shopify editors for their design patterns. 
+The admin user has a rich editor, with content based editing in a top toolbar and visual component based editing in a sidebar; offering distinct groupings in a motif not too abstracted from similar interfaces to commonly used products such as google docs or microsoft word.   
+Our editor for the basic user is much more streamlined, and instead focuses on an accordion menu like approach for choosing what template content to edit within the campaign. 
+<Row>
+<Wrapper>
+<Img fluid={props.embeddedImages.image2.fluid} /> 
+</Wrapper>
+<Wrapper>
+<Img fluid={props.embeddedImages.image3.fluid} /> 
+</Wrapper>
+</Row>
+
+<Row>
+<Wrapper>
+<Img fluid={props.embeddedImages.image4.fluid} /> 
+</Wrapper>
+<Wrapper>   
+
+## Testing Results and Feedback   
+I was fortunate enough for the project to have capacity for user research. After creating interactive wireframes, I tested 5 users with prototypes to get feedback on the existing task flow and see how successful the grouping was.   
+Largely the task flow and dual column approach for the UI was well received, however pages with the greatest amount of complexity met confusion. Primarily the page for adding contacts to an email campaign met confusion often as it was a technical requirement that this page also display a campaign preview as well with options to send out test emails. Seeing how a couple pages within the app strictly had to have this volume of features, it was apparent that the next step in improving the design was visual accessibility.
+</Wrapper>
+</Row>
 
 # Solution   
-Emphasis on visual accessibility, brand inclusivity, design system.
+## Redesign   
+Within the redesign I largely tackled brand personality and visual accessibility within the design. Based on testing results it was found that while the dual column approach was successful in serving the task flow, the inclusion of many industry standard features(e.g. uploading spreadsheets for contacts) caused confusion with too many options on screen. I also seeked out developing a brand personality that is more fun and casual to ease frustrations in users and allow users to feel that this is a service to empower them, not something to make them more busy.  
+## Brand Personality   
+For branding I wanted an inclusive brand personality that feels non-threatening and plays into the ease of use with the playfulness. I utilized Pablo Stanley’s illustration libraries Miroodles and OpenPeeps for adding playful touches on the gallery page.
+I additionally chose a color-block split complementary color scheme to add into the fun and casual brand.
 
-# Learnings   
-- Creating a design system
-- Illustration libraries
-- Visual accessibility
+## Design System   
+The design system was made with a focus on visual accessibility and distinct groupings. The base of the peoject is to be largely flat design but play into the Z-Axis with heavy and high contrast drop shadows. Drop Shadowed components represent elements that can/will bring the user to a new page within the app. This is evident in the cards for campaign templates, tutorials, routing buttons, and search bars. Drop shadow largely gives cues to the useer that this will bring them away from the current page they're on.   
+Within the flat components, many are grouped with a broad stroke and color fill. Stroked buttons represent interaction within the page, without having irreparable outcomes or losing current page progress. Button fills are either white, blue, or yellow. White represents more options, or going to a new location-- essentially not changing anything substantial in regards to the work one is doing. White buttons are no-risk presses, and instead only result in an interaction and viewing more info. Blue buttons represent Linear progress, as seen in CTAs to edit, go forward, schedule sends, saving contacts. Blue always represents progression within the app. Yellow represents Lateral Progress, Such as sending test emails, requesting reviews, or a prompt to upload spreadsheets. While Yellow represents action and something occurring, it does not explicitly contribute to the final outcome. Yellow additionally is low risk and does have cause action but is distinctly separated from blue to show difference in progress.
 
+
+# Learnings  
+My colleague Aja Lawson showed me her design approach for a grocery ordering app prototype. The design was very distinct and she told me about how it was created with the elderly in mind, and providing as much accessibility to users on a new service of which they likely had not used before. 
+I remembered that wisdom and brought it in here. The target users were not professional marketers or techie people, they were busy tired people who already had enough on their plate and either hadn't used marketing services in the past or they had and didn't enjoy it. For this reason I made the design system completely with visual accessibility in mind, attempting to create a single source of truth that can logically convey to a user what components will do what from a periphereal. Doing this was a really unique experience, of aeshtetically really basing everything around utility first.
+
+# Summary   
 
 

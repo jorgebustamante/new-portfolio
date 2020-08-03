@@ -1,52 +1,44 @@
-import React from 'react';
-import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
-import {IoIosMail} from 'react-icons/io'
+import React from "react";
 
 const Footer = () => {
   return (
-    <footer className='bg-white'>
-     
-      <nav className='flex justify-between max-w-6xl mx-auto py-4 md:py-8 text-4xl md:text-6xl text-red-500'>
-        <a
-          href='https://www.linkedin.com/in/paulie-rodriguez/'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='hover:text-red-600'
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href='https://github.com/paulie-rodriguez'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='hover:text-red-600'
-
-        >
-          <FaGithub />
-        </a>
-        <a
-          href='mailto:paulie.j.rodriguez@gmail.com?Subject=Hey!'
-          target='_top'
-          className='hover:text-red-600'
-
-        >
-          <IoIosMail />
-        </a>
-        <a
-          href='https://twitter.com/Paulie_Dev'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='hover:text-red-600'
-
-        >
-          <FaTwitter />
-        </a>
+    <footer className="bg-white josefin">
+      <nav className="flex flex-col max-w-6xl mx-auto py-4 md:py-8 text-base text-blue-600">
+        <div className="flex flex-col font-bold">
+          <p className="text-xl font-bold josefin text-blue-900">
+            One can also reach me at:
+          </p>
+          <a
+            href="https://www.linkedin.com/in/paulie-rodriguez/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linkedin
+          </a>
+          <a
+            href="https://github.com/paulie-rodriguez"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+          <a
+            href="mailto:paulie.j.rodriguez@gmail.com?Subject=Hey!"
+            target="_top"
+          >
+            Paulie.j.rodriguez@gmail.com
+          </a>
+        </div>
       </nav>
-      <div className='w-full py-8 flex flex-col text-center'>
-        <p className='mx-auto josefin text-lg text-blue-800'>I built this website with React/Gatsby.js, TailwindCSS, PostCSS, MDX.js, react-spring and deploy via netlify.</p>
-        <p className='mx-auto josefin text-lg text-blue-800'>Don&apos;t you know I love that JAMstack?</p>
+      <div className="w-full py-8 flex flex-col text-center">
+        <p className="mx-auto josefin text-lg text-blue-800">
+          I built this website with React/Gatsby.js, TailwindCSS, PostCSS,
+          MDX.js, react-spring and deploy via netlify.
+        </p>
+        <p className="mx-auto josefin text-lg text-blue-800">
+          Don&apos;t you know I love that JAMstack?
+        </p>
       </div>
-
     </footer>
   );
 };

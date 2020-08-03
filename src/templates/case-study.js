@@ -47,7 +47,7 @@ export const CaseStudyTemplate = ({
   }, {});
 
   return (
-    <section className="py-4 bg-white max-w-3xl mx-auto">
+    <section className="py-4 bg-white max-w-4xl mx-auto">
       {helmet || ""}
 
       <div className="mx-auto text-blue-900">

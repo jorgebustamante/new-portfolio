@@ -28,6 +28,7 @@ const Header = () => {
               <Hamburger
                 toggle={() => toggleButton(!isActive)}
                 toggled={isActive}
+                aria-label="Menu button"
               />
             </div>
           </div>

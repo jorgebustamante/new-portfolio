@@ -58,6 +58,13 @@
   & pre {
     @apply text-green-600;
   }
+  & .ARTICLEROW{
+  & #WRAPPER{
+    & .gatsby-image-wrapper{
+      @apply mx-2;
+    }
+  }
+}
   @screen lg {
     & .ARTICLEROW:nth-child(odd) {
       @apply flex-row-reverse;
