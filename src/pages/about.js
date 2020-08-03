@@ -29,7 +29,9 @@ const AboutPage = () => {
         <div className="py-4">
           <section className="flex flex-col items-center bg-white">
             <div className="">
-              <h1 className="mb-3 text-5xl text-blue-900 josefin font-bold border-b-2 border-blue-800">About Me:</h1>
+              <h1 className="mb-3 text-5xl text-blue-900 josefin font-bold border-b-2 border-blue-800">
+                About Me:
+              </h1>
 
               <div className="mb-6 text-blue-900 text-base w-full">
                 <div className="flex lg:flex-row flex-col py-4 justify-between border-b-2 border-blue-800">
@@ -38,7 +40,10 @@ const AboutPage = () => {
                       fluid={data.vasquez.childImageSharp.fluid}
                       alt="paulie at vasquez rocks"
                       className="rounded-sm"
-                      placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
+                      placeholderStyle={{
+                        filter: `blur(20px)`,
+                        WebkitFilter: `blur(20px)`,
+                      }}
                     />
                     <p className="absolute font-semibold text-xl text-white top-0 mx-4">
                       <span className="low-light-red josefin text-shadow">
@@ -57,7 +62,10 @@ const AboutPage = () => {
                       Oregon and Washington I spent my youth experiencing all
                       the west coast has to offer. I am self-made, supporting
                       myself through service jobs such as baristing, coffee
-                      roasting, and bartending.
+                      roasting, and bartending. <br />
+                      Currently my skillset resides in UX Design and Frontend
+                      Software Engineering, and I aim for leadership roles in UX
+                      Engineering within my career.
                     </p>
                   </div>
                 </div>
@@ -79,7 +87,12 @@ const AboutPage = () => {
                       </a>
                       . In my mentorship, Sofia taught me the nuances of studio
                       lighting, optic distortions, field interviewing, location
-                      scouting, and project direction.
+                      scouting, and project direction. <br />
+                      My experience working in the photography industry
+                      conditioned me well for working in design, learning the
+                      fundamentals of branding and creative directions. My work
+                      in the industry includes contract work with publications
+                      such as Teen Vogue, Vice, and Seattle Weekly.
                     </p>
                   </div>
 
@@ -88,7 +101,10 @@ const AboutPage = () => {
                       fluid={data.young.childImageSharp.fluid}
                       alt="paulie when younger"
                       className="rounded-sm"
-                      placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
+                      placeholderStyle={{
+                        filter: `blur(20px)`,
+                        WebkitFilter: `blur(20px)`,
+                      }}
                     />
                     <p className="absolute font-semibold text-xl text-white top-0 mx-4">
                       <span className="low-light-red josefin text-shadow">
@@ -99,13 +115,16 @@ const AboutPage = () => {
                   </div>
                 </div>
 
-                <div className="lg:flex-row flex-col flex py-4 border-b-2 border-blue-800">
+                <div className="lg:flex-row flex-col flex py-4">
                   <div className="w-full md:w-1/2 relative">
                     <Img
                       fluid={data.bartend.childImageSharp.fluid}
                       alt="paulie bartending"
                       className="rounded-sm"
-                      placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
+                      placeholderStyle={{
+                        filter: `blur(20px)`,
+                        WebkitFilter: `blur(20px)`,
+                      }}
                     />
                     <p className="absolute font-semibold text-xl text-white top-0 mx-4">
                       <span className="low-light-red josefin text-shadow">
@@ -119,13 +138,15 @@ const AboutPage = () => {
                     </p>
                     <p className="josefin xl:text-2xl text-xl leading-7">
                       In 2018 I had gained interest in software development and
-                      embarked on a significant journey of learning. Filled with
-                      hardship and unending determination, dedicating all of my
-                      time to supporting myself and growth within my field. I
-                      aim at career entry for hybrid design/engineering roles,
-                      and aspire to be a leader for latinx and native youth to
-                      continue introducing more communities to tech who have the
-                      least means of accessing it.
+                      embarked on a journey of learning, working various odd
+                      jobs to suit my academic schedule. Filled with hardship
+                      and determination, I began dedicating all of my time to
+                      supporting myself and growth within the field. I aspire to
+                      be a leader for latinx and native youth to continue
+                      introducing more communities to tech who have the least
+                      means of accessing it, and to empower historically
+                      impoverished communities to pathways towards developing
+                      greater generational wealth.
                     </p>
                   </div>
                 </div>

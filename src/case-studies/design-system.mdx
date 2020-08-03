@@ -12,6 +12,10 @@ embeddedImages:
 - ./images/wBasicP.png
 - ./images/wAdminS.png
 - ./images/wBasicS.png
+- ./images/wCard.png
+- ./images/wEditor.png
+- ./images/wFlat.png
+- ./images/wEditorMockup.png
 
 
 description: Creating a design system to increase accessibility in a B2B taskflow.
@@ -103,13 +107,19 @@ Our editor for the basic user is much more streamlined, and instead focuses on a
 </Wrapper>
 <Wrapper>   
 
+
 ## Testing Results and Feedback   
 I was fortunate enough for the project to have capacity for user research. After creating interactive wireframes, I tested 5 users with prototypes to get feedback on the existing task flow and see how successful the grouping was.   
 Largely the task flow and dual column approach for the UI was well received, however pages with the greatest amount of complexity met confusion. Primarily the page for adding contacts to an email campaign met confusion often as it was a technical requirement that this page also display a campaign preview as well with options to send out test emails. Seeing how a couple pages within the app strictly had to have this volume of features, it was apparent that the next step in improving the design was visual accessibility.
 </Wrapper>
 </Row>
 
+
 # Solution   
+<Wrapper>
+<Img fluid={props.embeddedImages.image10.fluid} /> 
+</Wrapper>   
+
 ## Redesign   
 Within the redesign I largely tackled brand personality and visual accessibility within the design. Based on testing results it was found that while the dual column approach was successful in serving the task flow, the inclusion of many industry standard features(e.g. uploading spreadsheets for contacts) caused confusion with too many options on screen. I also seeked out developing a brand personality that is more fun and casual to ease frustrations in users and allow users to feel that this is a service to empower them, not something to make them more busy.  
 ## Brand Personality   
@@ -117,14 +127,37 @@ For branding I wanted an inclusive brand personality that feels non-threatening 
 I additionally chose a color-block split complementary color scheme to add into the fun and casual brand.
 
 ## Design System   
-The design system was made with a focus on visual accessibility and distinct groupings. The base of the peoject is to be largely flat design but play into the Z-Axis with heavy and high contrast drop shadows. Drop Shadowed components represent elements that can/will bring the user to a new page within the app. This is evident in the cards for campaign templates, tutorials, routing buttons, and search bars. Drop shadow largely gives cues to the useer that this will bring them away from the current page they're on.   
-Within the flat components, many are grouped with a broad stroke and color fill. Stroked buttons represent interaction within the page, without having irreparable outcomes or losing current page progress. Button fills are either white, blue, or yellow. White represents more options, or going to a new location-- essentially not changing anything substantial in regards to the work one is doing. White buttons are no-risk presses, and instead only result in an interaction and viewing more info. Blue buttons represent Linear progress, as seen in CTAs to edit, go forward, schedule sends, saving contacts. Blue always represents progression within the app. Yellow represents Lateral Progress, Such as sending test emails, requesting reviews, or a prompt to upload spreadsheets. While Yellow represents action and something occurring, it does not explicitly contribute to the final outcome. Yellow additionally is low risk and does have cause action but is distinctly separated from blue to show difference in progress.
+The design system was made with a focus on visual accessibility and distinct groupings.   
+<Row>   
+<Wrapper>
+<Img fluid={props.embeddedImages.image9.fluid} /> 
+</Wrapper>   
+
+<Wrapper>   
+
+## Z-Axis Elements
+ The base of the peoject is to be largely flat design but play into the Z-Axis with heavy and high contrast drop shadows. Drop Shadowed components represent elements that can/will bring the user to a new page within the app. This is evident in the cards for campaign templates, tutorials, routing buttons, and search bars. Drop shadow largely gives cues to the useer that this will bring them away from the current page they're on.   
+Within the flat components, many are grouped with a broad stroke and color fill.    
+</Wrapper>
+</Row>
+<Row>
+<Wrapper>
+<Img fluid={props.embeddedImages.image11.fluid} /> 
+</Wrapper>
+<Wrapper>   
+
+## Utility Elements and Colors
+Stroked buttons represent interaction within the page, without having irreparable outcomes or losing current page progress. Button fills are either white, blue, or yellow. White represents more options, or going to a new location-- essentially not changing anything substantial in regards to the work one is doing. White buttons are no-risk presses, and instead only result in an interaction and viewing more info. Blue buttons represent Linear progress, as seen in CTAs to edit, go forward, schedule sends, saving contacts. Blue always represents progression within the app. Yellow represents Lateral Progress, Such as sending test emails, requesting reviews, or a prompt to upload spreadsheets. While Yellow represents action and something occurring, it does not explicitly contribute to the final outcome. Yellow additionally is low risk and does have cause action but is distinctly separated from blue to show difference in progress.
+</Wrapper>
+</Row>
+<Wrapper>
+<Img fluid={props.embeddedImages.image12.fluid} /> 
+</Wrapper>
 
 
 # Learnings  
 My colleague Aja Lawson showed me her design approach for a grocery ordering app prototype. The design was very distinct and she told me about how it was created with the elderly in mind, and providing as much accessibility to users on a new service of which they likely had not used before. 
-I remembered that wisdom and brought it in here. The target users were not professional marketers or techie people, they were busy tired people who already had enough on their plate and either hadn't used marketing services in the past or they had and didn't enjoy it. For this reason I made the design system completely with visual accessibility in mind, attempting to create a single source of truth that can logically convey to a user what components will do what from a periphereal. Doing this was a really unique experience, of aeshtetically really basing everything around utility first.
-
-# Summary   
+I remembered that wisdom and brought it in here. The target users were not professional marketers or techie people, they were busy tired people who already had enough on their plate and either hadn't used marketing services in the past or they had and didn't enjoy it. For this reason I made the design system completely with visual accessibility in mind, attempting to create a single source of truth that can logically convey to a user what components will do what from a periphereal.    
+Doing this was a really unique experience, of aeshtetically really basing everything around utility first. Watching synchronicity in visual aesthetics come together with utilitarian motivations was a real treat.
 
 

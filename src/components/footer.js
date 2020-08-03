@@ -2,11 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white josefin">
+    <footer className="bg-white josefin border-t-2 border-red-600">
       <nav className="flex flex-col max-w-6xl mx-auto py-4 md:py-8 text-base text-blue-600">
         <div className="flex flex-col font-bold">
           <p className="text-xl font-bold josefin text-blue-900">
-            One can also reach me at:
+            Contact:
           </p>
           <a
             href="https://www.linkedin.com/in/paulie-rodriguez/"

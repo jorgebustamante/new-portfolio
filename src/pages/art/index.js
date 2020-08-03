@@ -43,7 +43,7 @@ const ArtPage = () => {
       <SEO />
       <main className="pt-4 " id="Art">
         <div className="">
-          <div className='border-b-2 border-blue-800'>
+          <div className=''>
           <h1 className="text-4xl xl:text-5xl text-blue-900 font-semibold josefin">
             My Art:
           </h1>
@@ -53,7 +53,7 @@ const ArtPage = () => {
           <div className="flex flex-col">
             {cases.map((Item) => (
               <div
-                className="w-full py-8 border-b-2 border-blue-800"
+                className="w-full py-8 border-t-2 border-blue-800"
                 key={Item.node.frontmatter.title}
               >
                 <div className="flex flex-col lg:flex-row overflow-hidden">

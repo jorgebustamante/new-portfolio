@@ -37,7 +37,7 @@ const Header = () => {
             {LinkArr.map((navigationItem) => (
               <Link
                 activeClassName="font-bold border-b-2 border-red-600"
-                className="mt-3 md:mt-0 md:ml-6 text-red-700 opensans"
+                className="mt-3 md:mt-0 md:ml-6"
                 key={navigationItem.title}
                 to={navigationItem.route}
               >
@@ -46,6 +46,14 @@ const Header = () => {
                 </p>
               </Link>
             ))}
+            <a
+              className="mt-3 md:mt-0 md:ml-6 block text-blue-900 josefin"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1n6KkYM6YaFBT5AXQjzSkWIk1hvDzRwMc/view?usp=sharing"
+            >
+              CV
+            </a>
           </div>
         </div>
       </header>
@@ -72,6 +80,14 @@ const Header = () => {
               </Link>
             </div>
           ))}
+           <a
+              className="text-blue-900 block ml-4 text-2xl josefin"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1n6KkYM6YaFBT5AXQjzSkWIk1hvDzRwMc/view?usp=sharing"
+            >
+              CV
+            </a>
         </div>
       </div>
     </>

@@ -52,19 +52,23 @@ const Projects = () => {
   ];
   return (
     <Layout>
-      <SEO/>
+      <SEO />
       <main className="pt-4" id="Projects">
         <div>
-          <div className='border-b-2 border-blue-800'>
-          <h1 className="text-4xl xl:text-5xl text-blue-900 josefin font-bold">
-            My Projects:
-          </h1>
-          <h2 className='josefin text-lg md:text-xl md:w-2/3 text-blue-900'>Here you&apos;ll find a variety of my work ranging from open source contributions, small side work, or web dev projects for fun.</h2>
+          <div className="">
+            <h1 className="text-4xl xl:text-5xl text-blue-900 josefin font-bold">
+              My Projects:
+            </h1>
+            <h2 className="josefin text-lg md:text-xl md:w-2/3 text-blue-900">
+              Here you&apos;ll find a variety of my work ranging from open
+              source contributions, small side work, or web dev projects for
+              fun.
+            </h2>
           </div>
           <div className="flex flex-col">
             {ProjectsArr.map((Item) => (
               <div
-                className="w-full py-8 border-b-2 border-blue-800"
+                className="w-full py-8 border-t-2 border-blue-800"
                 key={Item.Title}
               >
                 <div className="flex flex-col lg:flex-row overflow-hidden">
@@ -72,16 +76,19 @@ const Projects = () => {
                     className="lg:w-1/2 w-full rounded-sm"
                     fluid={Item.Image}
                     alt="screencap"
-                    placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
+                    placeholderStyle={{
+                      filter: `blur(20px)`,
+                      WebkitFilter: `blur(20px)`,
+                    }}
                   />
                   <div className="lg:w-1/2 w-full py-4 lg:pl-4 flex flex-col justify-between">
                     <div>
-                    <h1 className="text-blue-900 font-semibold text-3xl xl:text-4xl yeseva">
-                      {Item.Title}{" "}
-                    </h1>
-                    <div className="text-blue-800 text-lg md:text-xl leading-relaxed josefin">
-                      {Item.Description}
-                    </div>
+                      <h1 className="text-blue-900 font-semibold text-3xl xl:text-4xl yeseva">
+                        {Item.Title}{" "}
+                      </h1>
+                      <div className="text-blue-800 text-lg md:text-xl leading-relaxed josefin">
+                        {Item.Description}
+                      </div>
                     </div>
                     <div className="my-4 flex flex-col josefin text-lg font-bold">
                       <a
