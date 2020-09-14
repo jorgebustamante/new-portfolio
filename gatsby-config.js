@@ -80,41 +80,7 @@ module.exports = {
         display: "swap",
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-web-font-loader",
-    //   options: {
-    //     custom: {
-    //       families: "Air",
-    //       urls: ["/fonts/fonts.css"],
-    //     },
-    //   },
-    // },
     `gatsby-plugin-preload-fonts`,
-    // {
-    //   resolve: "gatsby-plugin-firebase",  
-    //   options: {         
-    //    features: {          
-    //    auth: false,       
-    //    database: false,  
-    //    firestore: false,
-    //    storage: false,    
-    //    messaging: false, 
-    //    functions: false,  
-    //    performance: false, 
-    //    analytics:true,
-    //       },
-    //       credentials: {
-    //         apiKey: "AIzaSyB5IDfLbpHR6IfTEXDaqKpksVpb6msJFaI",
-    //         authDomain: "paulierodriguez-dev.firebaseapp.com",
-    //         databaseURL: "https://paulierodriguez-dev.firebaseio.com",
-    //         projectId: "paulierodriguez-dev",
-    //         storageBucket: "paulierodriguez-dev.appspot.com",
-    //         messagingSenderId: "210220386821",
-    //         appId: "1:210220386821:web:c5b767209a1c87947b2a6c",
-    //         measurementId: "G-XELLMVWVQ0"
-    //       } 
-    //      }, 
-    //    },
        {
         resolve: 'gatsby-plugin-webpack-bundle-analyzer',
         options: {
