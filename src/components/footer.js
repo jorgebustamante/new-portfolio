@@ -9,20 +9,6 @@ const Footer = () => {
             Contact:
           </p>
           <a
-            href="https://www.linkedin.com/in/paulie-rodriguez/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Linkedin
-          </a>
-          <a
-            href="https://github.com/paulie-rodriguez"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>
-          <a
             href="mailto:paulie.j.rodriguez@gmail.com?Subject=Hey!"
             target="_top"
           >
@@ -32,11 +18,7 @@ const Footer = () => {
       </nav>
       <div className="w-full py-8 flex flex-col text-center">
         <p className="mx-auto josefin text-lg text-blue-800">
-          I built this website with React/Gatsby.js, TailwindCSS, PostCSS,
-          MDX.js, react-spring and deploy via netlify.
-        </p>
-        <p className="mx-auto josefin text-lg text-blue-800">
-          Don&apos;t you know I love that JAMstack?
+          Please only email me if you have music recomendations.
         </p>
       </div>
     </footer>

@@ -3,7 +3,6 @@ module.exports = {
     title: `Yo! I'm Paulie Rodriguez`,
     titleTemplate: "Paulie and Knuckles",
     description: `Coffee powered UX Designer and Developer`,
-    twitterUsername: `@Paulie_dev`,
     url: `https://paulierodriguez.dev`,
     image: "/images/OgImageGrid.png", // Path to your image you placed in the 'static' folder
   },

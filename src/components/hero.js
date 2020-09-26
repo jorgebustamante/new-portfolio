@@ -12,8 +12,8 @@ const Hero = () => {
     <span key="b">
       I&apos;m <span className="low-light-red">Paulie Rodriguez</span>
     </span>,
-    <span key="c">a UX Designer,</span>,
-    <span key="d">and Software Developer.</span>,
+    <span key="c">a Designer,</span>,
+    <span key="d">and Coder.</span>,
   ];
 
   const trail = useTrail(items.length, {
@@ -56,24 +56,10 @@ const Hero = () => {
               </p>
             </h2>
           </div>
-          <div className="inline-flex pt-4 ">
-            <svg
-              className="animate-bounce w-6 h-8 text-blue-900"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-            <p className="josefin text-lg sm:text-2xl pl-2">
-              You can find a selection of my work below!{" "}
-            </p>
-          </div>
         </div>
       </div>
+      <p className='text-2xl josefin'>Im currently transitioning this website to a fan page for global funk music, stay tuned</p>
+
     </div>
   );
 };

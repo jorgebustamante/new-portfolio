@@ -6,8 +6,6 @@ const Header = () => {
   const [isActive, toggleButton] = useState(false);
   const LinkArr = [
     { title: "Home", route: "/" },
-    { title: "My Work", route: "/#Cases" },
-    { title: "Projects", route: "/projects" },
     { title: "Art", route: "/art" },
     { title: "About Me", route: "/about" },
   ];
@@ -46,14 +44,6 @@ const Header = () => {
                 </p>
               </Link>
             ))}
-            {/* <a
-              className="mt-3 md:mt-0 md:ml-6 block text-blue-900 josefin"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1n6KkYM6YaFBT5AXQjzSkWIk1hvDzRwMc/view?usp=sharing"
-            >
-              CV
-            </a> */}
           </div>
         </div>
       </header>
@@ -80,14 +70,6 @@ const Header = () => {
               </Link>
             </div>
           ))}
-           {/* <a
-              className="text-blue-900 block ml-4 text-2xl josefin"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1n6KkYM6YaFBT5AXQjzSkWIk1hvDzRwMc/view?usp=sharing"
-            >
-              CV
-            </a> */}
         </div>
       </div>
     </>
