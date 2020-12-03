@@ -19,15 +19,15 @@ body {
 }
 .low-light-red {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #f56565 60%);
-  padding-right: 15px;
+  /* padding-right: 15px; */
 }
 .low-light-blue {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #3BC6FF 60%);
-  padding-right: 15px;
+  /* padding-right: 1rem; */
 }
 .low-light-yellow {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #FEC33E 60%);
-  padding-right: 15px;
+  /* padding-right: 1rem; */
 }
 .josefin {
   font-family: "karla", Arial, Helvetica, sans-serif;

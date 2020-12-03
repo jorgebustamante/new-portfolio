@@ -44,16 +44,16 @@ const ArtPage = () => {
       <main className="pt-4 " id="Art">
         <div className="">
           <div className=''>
-          <h1 className="text-4xl xl:text-5xl text-blue-900 font-semibold josefin">
+          <h1 className="text-4xl xl:text-5xl text-ink font-semibold josefin pb-2">
             My Art:
           </h1>
-          <p className='josefin text-lg md:text-xl md:w-2/3 text-blue-900'>Here you&apos;ll find a selection of my personal art.</p>
+          <p className='josefin text-lg md:text-xl md:w-2/3 text-ink'>Here you&apos;ll find a selection of my personal art.</p>
           </div>
 
           <div className="flex flex-col">
             {cases.map((Item) => (
               <div
-                className="w-full py-8 border-t-2 border-blue-800"
+                className="w-full py-8 border-t-2 border-blue-900"
                 key={Item.node.frontmatter.title}
               >
                 <div className="flex flex-col lg:flex-row overflow-hidden">
@@ -68,10 +68,10 @@ const ArtPage = () => {
 
                   <div className="lg:w-1/2 w-full py-4 lg:pl-4 flex flex-col justify-between">
                     <div>
-                    <h1 className="text-blue-900 font-semibold text-3xl xl:text-4xl yeseva">
+                    <h1 className="text-ink font-semibold text-3xl xl:text-4xl yeseva">
                       {Item.node.frontmatter.title}{" "}
                     </h1>
-                    <p className="text-blue-800 text-lg md:text-xl leading-relaxed josefin">
+                    <p className="text-ink text-lg md:text-xl leading-relaxed josefin">
                       {Item.node.frontmatter.description}
                     </p>
                     </div>
@@ -85,7 +85,7 @@ const ArtPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-row justify-between josefin text-base font-medium text-blue-800 pt-2">
+                <div className="flex flex-row justify-between josefin text-base font-medium text-blue-900 pt-2">
                   <p id="date">{Item.node.frontmatter.date}</p>
                 </div>
               </div>

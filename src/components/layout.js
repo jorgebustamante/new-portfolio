@@ -12,10 +12,10 @@ function Layout({ children }) {
     from: { opacity: 0 },
   });
   return (
-    <div className="bg-white">
-      <div className="flex flex-col font-sans min-h-screen text-gray-900 max-w-6xl mx-auto px-4 md:px-12">
+    <div className="bg-yellow-50">
+      <div className="flex flex-col font-sans min-h-screen text-ink max-w-6xl mx-auto">
         <Header />
-        <animated.div style={animationProps}>{children}</animated.div>
+        <animated.div className="px-4 md:px-12" style={animationProps}>{children}</animated.div>
         <Footer />
       </div>
     </div>

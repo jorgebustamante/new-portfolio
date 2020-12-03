@@ -21,15 +21,15 @@ const AboutPage = () => {
   // `);
   return (
     <Layout>
-      <div className="flex flex-col font-sans min-h-screen text-blue-900 bg-white mt-1">
+      <div className="flex flex-col font-sans min-h-screen text-ink mt-1">
         <SEO
           keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
           title="About me"
         />
         <div className="py-4">
-          <section className="flex flex-col items-center bg-white">
+          <section className="flex flex-col items-center">
             <div className="">
-              <h1 className="mb-3 text-5xl text-blue-900 josefin font-bold border-b-2 border-blue-800">
+              <h1 className="mb-3 text-5xl text-ink josefin font-bold border-b-2 border-blue-900">
                 About Me:
               </h1>
               <p>Hey! Im under construction</p>

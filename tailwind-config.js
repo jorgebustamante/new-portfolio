@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      textColor:{
+        'ink': '#061F41'
+      },
       width: {
       '1/7': '14.2857143%',
        '2/7': '28.5714286%',

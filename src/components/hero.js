@@ -10,10 +10,14 @@ const Hero = () => {
       Yo! &nbsp;
     </span>,
     <span key="b">
-      I&apos;m <span className="low-light-red">Paulie Rodriguez</span>
+      I&apos;m&nbsp;
     </span>,
-    <span key="c">a Designer,</span>,
-    <span key="d">and Coder.</span>,
+    <span className="low-light-red" key="c">
+      Paulie
+      </span>,
+    <span className="low-light-red" key="d">
+       Rodriguez.
+       </span>,
   ];
 
   const trail = useTrail(items.length, {
@@ -24,24 +28,24 @@ const Hero = () => {
 
   return (
     <div className="">
-      <div className="lg:py-16 py-8 flex lg:flex-row flex-col yeseva font-bold italic sm:text-5xl text-4xl text-blue-900 leading-tight justify-between items-center mx-auto">
-        <div className="items-center">
-          <div className="lg:mb-0 mb-4 flex flex-col items-start">
+      <div className="lg:py-16 py-8 flex lg:flex-row flex-col yeseva font-bold italic text-4xl sm:text-5xl lg:text-6xl text-ink leading-tight justify-between mx-auto">
+        <div className="w-1/2">
+          <div className="lg:mb-0 mb-4 flex flex-wrap items-start">
             {trail.map(({ ...rest }, index) => (
-              <div id="mask" className="relative overflow-hidden" key={index}>
-                <animated.h1
+              <h1 id="mask" className="" key={index}>
+                <animated.p
                   className={`trails-text  ${items[index].class}`}
                   style={{ ...rest }}
                 >
                   {items[index]}
-                </animated.h1>
-              </div>
+                </animated.p>
+              </h1>
             ))}
           </div>
         </div>
         <Profile />
       </div>
-      <div className="flex lg:flex-row flex-col font-regular text-blue-900 font-medium">
+      <div className="flex lg:flex-row flex-col font-regular text-ink font-medium">
         <div className="lg:w-1/2">
           <Miroodle />
         </div>

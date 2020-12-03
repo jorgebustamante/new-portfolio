@@ -46,10 +46,10 @@ export const ArtCaseTemplate = ({
     }, {});
 
   return (
-    <section className="pb-12 bg-white">
+    <section className="pb-12">
       {helmet || ""}
 
-      <div className="mx-auto text-blue-900">
+      <div className="mx-auto text-ink">
         <h1 className="lg:text-6xl text-4xl italic heaviest yeseva leading-tight">
           {title}
         </h1>

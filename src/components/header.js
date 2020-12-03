@@ -12,8 +12,8 @@ const Header = () => {
 
   return (
     <>
-      <header className="m-0">
-        <div className="flex flex-wrap md:flex-no-wrap items-center justify-between py-6">
+      <header className="m-0 px-4 md:px-12">
+        <div className="flex flex-wrap md:flex-nowrap items-center justify-between py-6">
           <div className="flex items-center">
             <Link to="/" className="">
               <p className="yeseva leading-none heaviest text-4xl text-red-600">
@@ -39,7 +39,7 @@ const Header = () => {
                 key={navigationItem.title}
                 to={navigationItem.route}
               >
-                <p className="block text-blue-900 josefin">
+                <p className="block text-ink josefin">
                   {navigationItem.title}
                 </p>
               </Link>
@@ -50,7 +50,7 @@ const Header = () => {
       <div
         className={`${
           isActive ? `true` : `false`
-        } fixed bg-white h-screen w-full flex flex-col top-0 md:hidden lg:hidden z-10`}
+        } fixed bg-yellow-50 h-screen w-full flex flex-col top-0 md:hidden lg:hidden z-10`}
         id="SideMenu"
       >
         <div className="flex flex-col mt-16">
@@ -64,7 +64,7 @@ const Header = () => {
                 to={navigationItem.route}
                 onClick={() => toggleButton(!isActive)}
               >
-                <p className="text-blue-900 block ml-4 text-2xl josefin">
+                <p className="text-ink block ml-4 text-2xl josefin">
                   {navigationItem.title}
                 </p>
               </Link>
