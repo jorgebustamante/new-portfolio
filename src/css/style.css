@@ -14,9 +14,6 @@
 body {
   overflow-x: hidden;
 }
-.miroodle {
-  bottom: 4em;
-}
 .low-light-red {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #f56565 60%);
   /* padding-right: 15px; */
@@ -29,6 +26,8 @@ body {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #FEC33E 60%);
   /* padding-right: 1rem; */
 }
+.glow{
+  filter: drop-shadow(-10px 10px 100px rgba(246, 101, 101, 0.75));}
 .josefin {
   font-family: "karla", Arial, Helvetica, sans-serif;
 }

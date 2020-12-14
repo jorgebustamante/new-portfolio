@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 const Profile = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "avatar.png" }) {
+      file(relativePath: { eq: "prof2.png" }) {
         childImageSharp {
           fluid(maxWidth: 600, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -16,7 +16,7 @@ const Profile = () => {
   `);
   return (
     <Img
-      className="max-w-2xl lg:w-1/2 w-full rounded-sm"
+      className="max-w-md lg:max-w-sm w-full rounded-sm glow mx-auto"
       fluid={data.file.childImageSharp.fluid}
       alt="paulie face"
       placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}

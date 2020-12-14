@@ -28,8 +28,8 @@ const Hero = () => {
 
   return (
     <div className="">
-      <div className="lg:py-16 py-8 flex lg:flex-row flex-col yeseva font-bold italic text-4xl sm:text-5xl lg:text-6xl text-ink leading-tight justify-between mx-auto">
-        <div className="w-1/2">
+      <div className="pt-8 flex lg:flex-row flex-col yeseva font-bold italic text-5xl sm:text-6xl lg:text-7xl text-ink leading-tight justify-between mx-auto">
+        <div className="lg:w-1/2 lg:self-center">
           <div className="lg:mb-0 mb-4 flex flex-wrap items-start">
             {trail.map(({ ...rest }, index) => (
               <h1 id="mask" className="" key={index}>
@@ -45,7 +45,7 @@ const Hero = () => {
         </div>
         <Profile />
       </div>
-      <div className="flex lg:flex-row flex-col font-regular text-ink font-medium">
+      <div className="flex lg:flex-row flex-col font-regular text-ink font-medium bottom-24 relative lg:static">
         <div className="lg:w-1/2">
           <Miroodle />
         </div>
