@@ -19,7 +19,7 @@ function NotFoundPage({ children }) {
           src={avatar}
         />
         <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3 josefin">
-          <span className='yeseva italic text-5xl'>QueBerga ;V!?  </span>How did you get to this page? I think if you&apos;re seeing this you typed something wrong in the URL bar, but if you clicked a link and got brought here please contact me about it!
+          <span className='yeseva text-5xl'>QueBerga ;V!?  </span>How did you get to this page? I think if you&apos;re seeing this you typed something wrong in the URL bar, but if you clicked a link and got brought here please contact me about it!
         </h2>
       </div>
     </Layout>

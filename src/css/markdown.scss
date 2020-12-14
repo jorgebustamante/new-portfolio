@@ -3,7 +3,6 @@
 .markdown {
   & h1 {
     @apply text-3xl;
-    @apply italic;
     @apply font-bold;
     font-family: "Air", Georgia, Cambria, Cochin, Times,
       "Times New Roman", serif;
@@ -11,7 +10,6 @@
   }
   & h2 {
     @apply text-2xl;
-    @apply italic;
     @apply font-bold;
     font-family: "Air", Georgia, Cambria, Cochin, Times,
       "Times New Roman", serif;

@@ -15,12 +15,14 @@ const Profile = () => {
     }
   `);
   return (
+    <div className="glow w-full">
     <Img
-      className="max-w-md lg:max-w-sm w-full rounded-sm glow mx-auto"
+      className="max-w-md lg:max-w-sm w-full rounded-sm mx-auto overflow-visible"
       fluid={data.file.childImageSharp.fluid}
       alt="paulie face"
       placeholderStyle={{ filter: `blur(20px)`, WebkitFilter: `blur(20px)` }}
     />
+    </div>
   );
 };
 

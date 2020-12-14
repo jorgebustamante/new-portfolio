@@ -50,11 +50,11 @@ export const ArtCaseTemplate = ({
       {helmet || ""}
 
       <div className="mx-auto text-ink">
-        <h1 className="lg:text-6xl text-4xl italic heaviest yeseva leading-tight">
+        <h1 className="lg:text-6xl text-4xl heaviest yeseva leading-tight">
           {title}
         </h1>
         <p className="lg:text-4xl text-2xl">
-        <span className="highlight italic pt-1 pr-1 font-medium josefin leading-tight">{description}</span>
+        <span className="highlight pt-1 pr-1 font-medium josefin leading-tight">{description}</span>
         </p>
         <p className="text-gray-600 volkorn">{date}</p>
         <div className="w-full text-center rounded-sm flex">
